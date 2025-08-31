@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Grand Exotica Hospitality - Your Dream Travel Partner",
-  description: "Discover extraordinary travel experiences with Grand Exotica. From serene beaches to majestic mountains, we craft unforgettable journeys tailored just for you.",
+  title: "Swiss Hotels & Resorts - Your Dream Travel Partner",
+  description: "Discover extraordinary travel experiences with Swiss Hotels & Resorts. From serene beaches to majestic mountains, we craft unforgettable journeys tailored just for you.",
 };
 
 export default function RootLayout({

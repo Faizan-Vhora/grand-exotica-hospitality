@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import DestinationCard from '@/components/cards/DestinationCard';
 import { domesticDestinations } from '@/data/destinations';
-import { Mountain, Beach, TreePine, Building2 } from 'lucide-react';
+import { Mountain, Waves, TreePine, Building2 } from 'lucide-react';
 
 export default function DomesticPage() {
   return (
@@ -43,7 +43,7 @@ export default function DomesticPage() {
               <span className="text-sm mt-1">Mountains</span>
             </div>
             <div className="flex flex-col items-center">
-              <Beach className="h-8 w-8" />
+              <Waves className="h-8 w-8" />
               <span className="text-sm mt-1">Beaches</span>
             </div>
             <div className="flex flex-col items-center">

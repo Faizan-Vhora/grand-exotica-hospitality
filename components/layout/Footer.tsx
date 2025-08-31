@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
+import Image from 'next/image';
+import { Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
-  const whatsappNumber = '+919999999999';
+  const whatsappNumber = '+919662174670';
   const whatsappMessage = 'Hello, I am interested in your travel packages!';
   const whatsappLink = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -11,9 +12,14 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <MapPin className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold">Grand Exotica</span>
+            <div className="mb-4">
+              <Image
+                src="/Image.png"
+                alt="Swiss Hotels & Resorts"
+                width={180}
+                height={60}
+                className="h-14 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-gray-300 mb-4">
               Your trusted partner for unforgettable travel experiences around the world.
@@ -88,11 +94,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+91 9999 999 999</span>
+                <span className="text-gray-300">+91 9662174670</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">info@grandexotica.com</span>
+                <span className="text-gray-300">faizanvhora0505@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-blue-400" />
@@ -104,7 +110,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Grand Exotica Hospitality. All rights reserved.
+            © {new Date().getFullYear()} Faizan Vhora. All rights reserved.
           </p>
         </div>
       </div>
