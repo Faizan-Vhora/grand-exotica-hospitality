@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Package, Clock, Users, Star, Sparkles } from 'lucide-react';
+import { Package, Clock, Star, Sparkles } from 'lucide-react';
 
 const packages = [
   {
