@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <img
-                src="/Image.png"
+                src="/logo.png"
                 alt="Swiss Hotels & Resorts"
                 className="h-14 w-auto brightness-0 invert"
               />

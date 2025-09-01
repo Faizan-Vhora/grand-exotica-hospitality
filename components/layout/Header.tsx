@@ -39,7 +39,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <img
-              src="/Image.png"
+              src="/logo.png"
               alt="Swiss Hotels & Resorts"
               className="h-12 w-auto"
             />
