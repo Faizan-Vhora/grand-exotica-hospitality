@@ -1,5 +1,7 @@
 # Swiss Hotels & Resorts - Travel Website
 
+🌐 **Live Website**: https://grand-exotica-hospitality-webs.vercel.app/
+
 ## 📌 Project Overview
 
 Welcome to the **Swiss Hotels & Resorts** travel website! This is a modern, professional travel booking platform that helps customers explore and book domestic and international travel destinations. The website showcases luxury travel experiences, hotel packages, and allows visitors to make inquiries about their dream vacations.
@@ -53,7 +55,7 @@ Don't worry if you're not familiar with coding! Follow these simple steps to get
    ```
 3. Download the project:
    ```
-   git clone [your-repository-url]
+   git clone https://github.com/Faizan-Vhora/grand-exotica-hospitality.git
    ```
 4. Enter the project folder:
    ```
@@ -127,8 +129,8 @@ Vercel is the company that created Next.js (the framework this website uses). It
    - Your website is now live! 🎉
 
 4. **Your Website URL**
-   - Vercel will give you a URL like: `your-project.vercel.app`
-   - Share this with anyone to view your website
+   - Your website is live at: `https://grand-exotica-hospitality-webs.vercel.app/`
+   - Share this link with anyone to view your website
 
 ### Option 2: Deploy to GitHub Pages (FREE)
 
@@ -168,7 +170,7 @@ GitHub Pages is a free hosting service from GitHub.
    - Click "Save"
 
 5. **Access Your Website**
-   - Your site will be available at: `https://[your-username].github.io/[repository-name]`
+   - Your site will be available at: `https://faizan-vhora.github.io/grand-exotica-hospitality`
    - It might take 5-10 minutes to appear the first time
 
 ### Option 3: Deploy to Netlify (FREE)
@@ -252,6 +254,29 @@ travel/
 #### "Module not found" error
 **Solution**: Run `npm install` to install missing packages
 
+#### Logo or Images Not Showing on Vercel
+**Common Causes & Solutions**:
+1. **Wrong Repository Connected**: 
+   - Go to Vercel Settings → Git
+   - Make sure it's connected to `Faizan-Vhora/grand-exotica-hospitality`
+   - NOT `grand-exotica-hospitality-web` or any other variation
+
+2. **Old Deployment Cached**:
+   - In Vercel Deployments, click (...) → Redeploy
+   - UNCHECK "Use existing Build Cache"
+   - Redeploy
+
+3. **Image Path Issues**:
+   - Images should be in `public` folder
+   - Reference them as `/filename.png` (not `public/filename.png`)
+   - Use lowercase filenames for better compatibility
+
+#### Vercel Shows "Initial Commit" Instead of Latest Code
+**Solution**:
+1. Disconnect and reconnect the correct GitHub repository
+2. Make sure you're on the `main` branch
+3. Force a new deployment without cache
+
 ---
 
 ## 📧 Contact & Support
@@ -264,7 +289,8 @@ If you need help with this website:
 - Phone: +91 8887776669
 
 **Technical Support**:
-- Create an issue on GitHub
+- GitHub Repository: https://github.com/Faizan-Vhora/grand-exotica-hospitality
+- Create an issue on GitHub for technical problems
 - Or contact your web developer
 
 ---
@@ -331,8 +357,10 @@ If you need help with this website:
 | Run website locally | `npm run dev` |
 | Build for production | `npm run build` |
 | Check for errors | `npm run lint` |
-| Deploy to GitHub Pages | `npx gh-pages -d out` |
 | Stop the server | `Ctrl + C` (in terminal) |
+| Push changes to GitHub | `git add . && git commit -m "Your message" && git push` |
+| Check git status | `git status` |
+| View commit history | `git log --oneline` |
 
 ---
 
