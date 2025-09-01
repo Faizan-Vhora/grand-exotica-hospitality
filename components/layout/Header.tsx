@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import logoImg from '../../public/swiss-logo.png';
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -38,10 +40,13 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <img
-              src="/swiss-logo.png"
+            <Image
+              src={logoImg}
               alt="Swiss Hotels & Resorts"
+              width={200}
+              height={60}
               className="h-12 w-auto"
+              priority
             />
           </Link>
 
