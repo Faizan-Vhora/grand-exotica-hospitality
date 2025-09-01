@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <Image
-                src="/Image.png"
+                src={`${process.env.NODE_ENV === 'production' ? '/grand-exotica-hospitality' : ''}/Image.png`}
                 alt="Swiss Hotels & Resorts"
                 width={180}
                 height={60}

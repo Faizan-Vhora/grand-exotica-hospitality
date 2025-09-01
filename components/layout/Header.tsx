@@ -40,7 +40,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="/Image.png"
+              src={`${process.env.NODE_ENV === 'production' ? '/grand-exotica-hospitality' : ''}/Image.png`}
               alt="Swiss Hotels & Resorts"
               width={200}
               height={60}
