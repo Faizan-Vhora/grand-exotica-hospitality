@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Phone, Mail, Clock, MessageCircle } from 'lucide-react';
-import logoImage from '@/public/Image.png';
 
 export default function Footer() {
   const whatsappNumber = '+919662174670';
@@ -14,11 +12,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="mb-4">
-              <Image
-                src={logoImage}
+              <img
+                src="/Image.png"
                 alt="Swiss Hotels & Resorts"
-                width={180}
-                height={60}
                 className="h-14 w-auto brightness-0 invert"
               />
             </div>
