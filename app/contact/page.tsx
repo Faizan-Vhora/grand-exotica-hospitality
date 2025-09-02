@@ -20,7 +20,7 @@ export default function ContactPage() {
             </h1>
             <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We're here to help you plan your perfect journey
+              We&apos;re here to help you plan your perfect journey
             </p>
           </motion.div>
         </div>

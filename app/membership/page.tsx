@@ -22,7 +22,7 @@ export default function MembershipPage() {
             <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Join the Swiss Hospitality family and enjoy unparalleled benefits, 
-              exclusive access, and lifetime memories across the world's finest destinations.
+              exclusive access, and lifetime memories across the world&apos;s finest destinations.
             </p>
           </motion.div>
         </div>

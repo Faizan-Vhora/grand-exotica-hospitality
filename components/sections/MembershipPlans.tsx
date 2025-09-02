@@ -94,7 +94,7 @@ export default function MembershipPlans() {
                       />
                     </div>
                     <div className="absolute bottom-4 left-4">
-                      <p className="text-2xl font-bold">I'M</p>
+                      <p className="text-2xl font-bold">I&apos;M</p>
                       <p className="text-2xl font-bold">MEMBER</p>
                     </div>
                     <div className="absolute bottom-4 right-4">

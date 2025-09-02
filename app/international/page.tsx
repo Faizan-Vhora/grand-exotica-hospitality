@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Star, Clock, DollarSign, Globe, Plane, Building, Palmtree, Mountain, Camera, Heart, Sparkles } from 'lucide-react';
+import { Calendar, Star, Clock, DollarSign, Globe, Plane, Building, Palmtree, Mountain, Camera, Heart, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 const internationalDestinations = [
@@ -245,7 +245,7 @@ export default function InternationalPage() {
             </h2>
             <div className="w-24 h-[2px] bg-gold mx-auto mb-6" />
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              From tropical paradises to cultural capitals, experience the world's most sought-after destinations
+              From tropical paradises to cultural capitals, experience the world&apos;s most sought-after destinations
             </p>
           </motion.div>
 

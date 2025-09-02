@@ -7,7 +7,6 @@ import HeroSection from '@/components/sections/HeroSection';
 import LuxuryExperiences from '@/components/sections/LuxuryExperiences';
 import MembershipPlans from '@/components/sections/MembershipPlans';
 import InquiryForm from '@/components/sections/InquiryForm';
-import DestinationCard from '@/components/cards/DestinationCard';
 import { domesticDestinations, internationalDestinations } from '@/data/destinations';
 
 export default function HomePage() {

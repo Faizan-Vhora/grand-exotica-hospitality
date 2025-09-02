@@ -32,7 +32,7 @@ export default function NotFound() {
         <div className="w-24 h-[1px] bg-gold mx-auto mb-6" />
 
         <p className="text-xl text-gray-300 mb-8">
-          The page you're looking for seems to have taken an unexpected vacation. 
+          The page you&apos;re looking for seems to have taken an unexpected vacation. 
           Let us help you find your way back.
         </p>
 

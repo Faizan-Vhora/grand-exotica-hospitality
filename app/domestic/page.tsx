@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { 
-  Mountain, Waves, TreePine, Building2, MapPin, Clock, Star, 
-  Filter, ChevronRight, Calendar, Users, Sparkles 
+  MapPin, Clock, Star, 
+  Filter, ChevronRight, Calendar, Sparkles 
 } from 'lucide-react';
 
 // High-quality destination data with proper images
@@ -354,7 +354,7 @@ export default function DomesticPage() {
           >
             <Sparkles className="h-12 w-12 text-gold mx-auto mb-4" />
             <h2 className="text-4xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Can't Find Your <span className="text-gold">Dream Destination?</span>
+              Can&apos;t Find Your <span className="text-gold">Dream Destination?</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Contact our travel experts for customized packages and exclusive deals

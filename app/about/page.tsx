@@ -1,9 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Award, Globe, Users, Star, Heart, Shield, Target, Eye, Compass, TrendingUp, Building, Handshake } from 'lucide-react';
+import { Award, Globe, Users, Shield, Target, Eye, Compass, TrendingUp, Building, Handshake } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -149,7 +148,7 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
                 To provide exceptional travel experiences that exceed expectations, creating lasting memories 
-                through personalized service, attention to detail, and a deep understanding of our clients' desires. 
+                through personalized service, attention to detail, and a deep understanding of our clients&apos; desires. 
                 We strive to be the bridge between dreams and reality in luxury travel.
               </p>
             </motion.div>
