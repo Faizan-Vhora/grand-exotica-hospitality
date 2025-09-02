@@ -5,7 +5,7 @@ import { Send, User, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function InquiryForm() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-24 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,13 +15,11 @@ export default function InquiryForm() {
           className="max-w-4xl mx-auto"
         >
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Start Your{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Journey
-              </span>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Start Your <span className="text-gold">Journey</span>
             </h2>
-            <p className="text-xl text-gray-600">
+            <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
+            <p className="text-xl text-gray-300">
               Get in touch with us to plan your dream vacation
             </p>
           </div>
@@ -31,7 +29,7 @@ export default function InquiryForm() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-xl p-8"
+            className="bg-gray-900 border border-gray-800 rounded-lg p-8 md:p-12"
             onSubmit={(e) => e.preventDefault()}
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -39,11 +37,11 @@ export default function InquiryForm() {
                 whileHover={{ scale: 1.02 }}
                 className="relative"
               >
-                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gold" />
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full pl-12 pr-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all placeholder-gray-500"
                 />
               </motion.div>
 
@@ -51,11 +49,11 @@ export default function InquiryForm() {
                 whileHover={{ scale: 1.02 }}
                 className="relative"
               >
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gold" />
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full pl-12 pr-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all placeholder-gray-500"
                 />
               </motion.div>
 
@@ -63,11 +61,11 @@ export default function InquiryForm() {
                 whileHover={{ scale: 1.02 }}
                 className="relative"
               >
-                <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gold" />
                 <input
                   type="tel"
                   placeholder="Phone Number"
-                  className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full pl-12 pr-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all placeholder-gray-500"
                 />
               </motion.div>
 
@@ -75,8 +73,8 @@ export default function InquiryForm() {
                 whileHover={{ scale: 1.02 }}
                 className="relative"
               >
-                <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-                <select className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all appearance-none bg-white">
+                <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gold" />
+                <select className="w-full pl-12 pr-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all appearance-none">
                   <option value="">Select Destination</option>
                   <option value="domestic">Domestic</option>
                   <option value="international">International</option>
@@ -91,7 +89,7 @@ export default function InquiryForm() {
               <textarea
                 placeholder="Tell us about your dream vacation..."
                 rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all resize-none placeholder-gray-500"
               />
             </motion.div>
 
@@ -99,12 +97,27 @@ export default function InquiryForm() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="mt-6 w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold flex items-center justify-center space-x-2 hover:shadow-lg transition-all"
+              className="mt-8 w-full bg-gold text-black py-4 rounded-lg font-semibold text-lg tracking-wider uppercase flex items-center justify-center space-x-2 hover:bg-opacity-90 transition-all"
             >
               <Send className="h-5 w-5" />
               <span>Send Inquiry</span>
             </motion.button>
           </motion.form>
+
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+              <h4 className="text-gold font-semibold mb-2">Call Us</h4>
+              <p className="text-gray-400">+91 98765 43210</p>
+            </div>
+            <div>
+              <h4 className="text-gold font-semibold mb-2">Email Us</h4>
+              <p className="text-gray-400">info@swisshospitality.com</p>
+            </div>
+            <div>
+              <h4 className="text-gold font-semibold mb-2">Visit Us</h4>
+              <p className="text-gray-400">Mumbai, India</p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
