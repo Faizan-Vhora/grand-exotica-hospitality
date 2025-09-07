@@ -1,21 +1,97 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import Link from 'next/link';
+
+const heroSlides = [
+  {
+    type: 'image',
+    src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2070', // Mountain villa
+    title: 'Mountain Retreats',
+    subtitle: 'Luxurious villas with breathtaking mountain views'
+  },
+  {
+    type: 'image', 
+    src: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=2070', // Yacht at beach
+    title: 'Coastal Paradise',
+    subtitle: 'Exclusive yacht experiences and pristine beaches'
+  },
+  {
+    type: 'image',
+    src: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070', // Beach resort
+    title: 'Beachfront Luxury',
+    subtitle: 'Five-star hotels on pristine coastlines'
+  },
+  {
+    type: 'image',
+    src: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=2070', // Mountain scenery
+    title: 'Alpine Escapes', 
+    subtitle: 'Serene mountain destinations for ultimate relaxation'
+  }
+];
 
 export default function HeroSection() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000); // Change slide every 5 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
+  
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
-        }}
-      />
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentSlide}
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.95 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          className="absolute inset-0 z-0"
+        >
+          {heroSlides[currentSlide].type === 'video' ? (
+            <>
+              <video
+                key={heroSlides[currentSlide].src}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+              >
+                <source src={heroSlides[currentSlide].src} type="video/mp4" />
+              </video>
+              <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
+            </>
+          ) : (
+            <div 
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('${heroSlides[currentSlide].src}')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            />
+          )}
+        </motion.div>
+      </AnimatePresence>
+      
+      {/* Slide indicators */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+        {heroSlides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === currentSlide ? 'bg-white w-8' : 'bg-white/50'
+            }`}
+          />
+        ))}
+      </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <motion.div
@@ -59,31 +135,6 @@ export default function HeroSection() {
             unforgettable memories with our curated collection of premium hospitality services.
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.5, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center"
-          >
-            <Link href="/packages">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-10 py-4 bg-gold text-black font-semibold text-lg tracking-wider uppercase hover:bg-opacity-90 transition-all duration-300"
-              >
-                Explore Packages
-              </motion.button>
-            </Link>
-            <Link href="/services">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-10 py-4 bg-transparent border-2 border-white text-white font-semibold text-lg tracking-wider uppercase hover:bg-white hover:text-black transition-all duration-300"
-              >
-                Our Services
-              </motion.button>
-            </Link>
-          </motion.div>
         </motion.div>
 
         <motion.div

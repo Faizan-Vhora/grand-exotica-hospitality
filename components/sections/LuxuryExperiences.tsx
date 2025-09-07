@@ -5,34 +5,34 @@ import { Sparkles } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Suite Retreat',
-    description: 'Experience pure indulgence in our elegantly designed suites, each offering breathtaking views and a sanctuary of relaxation.',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070',
+    title: 'Presidential Suites',
+    description: 'Experience unparalleled luxury in our opulent presidential suites with panoramic views, private terraces, and 24/7 butler service.',
+    image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070',
   },
   {
-    title: 'Culinary Delights',
-    description: 'Savor a culinary journey with our exquisite dining options curated by renowned chefs, promising an unforgettable gastronomic experience.',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070',
+    title: 'Michelin Star Dining',
+    description: 'Indulge in world-class cuisine crafted by Michelin-starred chefs, featuring rare ingredients and innovative culinary artistry.',
+    image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2070',
   },
   {
-    title: 'Personalized Service',
-    description: 'Our dedicated team ensures every aspect of your stay is tailored to perfection, providing personalized service with warmth and efficiency.',
-    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070',
+    title: 'Luxury Spa & Wellness',
+    description: 'Immerse yourself in our award-winning spa featuring gold-infused treatments, Himalayan salt rooms, and private infinity pools.',
+    image: 'https://media.istockphoto.com/id/1445875946/photo/relax-couple-spa-stone-back-massage-and-luxury-wellness-for-zen-therapy-beauty-and-rich.jpg?s=612x612&w=0&k=20&c=Zgx06BTsjAyLRkSI4XUQU64Zn9IHfPGhEnNP4F4d2X8=',
   },
   {
-    title: 'Spa Oasis',
-    description: 'Rejuvenate your senses at our tranquil spa, where ancient techniques and modern therapies harmonize to offer a blissful retreat.',
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070',
+    title: 'Private Yacht Experience',
+    description: 'Set sail on our exclusive yacht fleet with personal crew, gourmet dining, and access to secluded islands and hidden coves.',
+    image: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=2070',
   },
   {
-    title: 'Adventure Escapes',
-    description: 'Embark on thrilling adventures amidst picturesque landscapes, with our curated excursions promising adrenaline-pumping experiences.',
-    image: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=2070',
+    title: 'Helicopter Tours',
+    description: 'Soar above breathtaking landscapes in our private helicopters, with champagne service and exclusive landing sites.',
+    image: 'https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?q=80&w=2070',
   },
   {
-    title: 'Event Elegance',
-    description: 'Host your special occasions in sophisticated style at our elegant venues, where every detail is meticulously tailored for a memorable event.',
-    image: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2070',
+    title: 'Royal Treatment',
+    description: 'Experience hospitality fit for royalty with personal concierge, private jet transfers, and exclusive access to VIP events.',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070',
   },
 ];
 

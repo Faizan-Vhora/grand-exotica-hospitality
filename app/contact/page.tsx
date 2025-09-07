@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -144,10 +144,12 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-white font-semibold mb-1">Office Address</h3>
                     <p className="text-gray-400">
-                      123, Business Hub<br />
-                      Andheri West<br />
-                      Mumbai - 400058<br />
-                      Maharashtra, India
+                      B - 510, Gopal Palace, B - Wing<br />
+                      Fifth Floor, Next to Shiromani Complex<br />
+                      Beside Nehru Nagar Circle, Satellite Road<br />
+                      Acharya Narendradev Nagar, Ambawadi<br />
+                      Ahmedabad, Gujarat 380015<br />
+                      Area: 1150 Sq. Ft. (106.84 Sq. Mtrs)
                     </p>
                   </div>
                 </div>
@@ -169,16 +171,44 @@ export default function ContactPage() {
               <div className="pt-8 border-t border-gray-800">
                 <h3 className="text-white font-semibold mb-4">Follow Us</h3>
                 <div className="flex gap-4">
-                  {[Facebook, Instagram, Twitter, Linkedin].map((Icon, index) => (
-                    <motion.a
-                      key={index}
-                      href="#"
-                      whileHover={{ scale: 1.1, y: -2 }}
-                      className="bg-gray-900 p-3 rounded-lg hover:bg-gold/20 transition-colors"
-                    >
-                      <Icon className="h-5 w-5 text-gold" />
-                    </motion.a>
-                  ))}
+                  <motion.a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    className="bg-gray-900 p-3 rounded-lg hover:bg-gold/20 transition-colors"
+                  >
+                    <Facebook className="h-5 w-5 text-gold" />
+                  </motion.a>
+                  <motion.a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    className="bg-gray-900 p-3 rounded-lg hover:bg-gold/20 transition-colors"
+                  >
+                    <Instagram className="h-5 w-5 text-gold" />
+                  </motion.a>
+                  <motion.a
+                    href="https://x.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    className="bg-gray-900 p-3 rounded-lg hover:bg-gold/20 transition-colors"
+                  >
+                    <svg className="h-5 w-5 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                  </motion.a>
+                  <motion.a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    className="bg-gray-900 p-3 rounded-lg hover:bg-gold/20 transition-colors"
+                  >
+                    <Linkedin className="h-5 w-5 text-gold" />
+                  </motion.a>
                 </div>
               </div>
             </motion.div>

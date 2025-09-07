@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, Clock, MessageCircle } from 'lucide-react';
+import { Phone, Mail, Clock, MessageCircle, Facebook, Instagram, Linkedin } from 'lucide-react';
 import logoImg from '../../public/swiss-logo.png';
 
 export default function Footer() {
-  const whatsappNumber = '+919662174670';
+  const whatsappNumber = '+917405108104';
   const whatsappMessage = 'Hello, I am interested in your travel packages!';
   const whatsappLink = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -25,15 +25,53 @@ export default function Footer() {
             <p className="text-gray-300 mb-4">
               Your trusted partner for unforgettable travel experiences around the world.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-3">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-700 p-2.5 rounded-full hover:bg-gold transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-700 p-2.5 rounded-full hover:bg-gold transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-700 p-2.5 rounded-full hover:bg-gold transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-700 p-2.5 rounded-full hover:bg-gold transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 p-3 rounded-full hover:bg-green-600 transition-colors"
+                className="bg-green-500 p-2.5 rounded-full hover:bg-green-600 transition-colors"
                 aria-label="WhatsApp"
               >
-                <MessageCircle className="h-6 w-6" />
+                <MessageCircle className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -95,11 +133,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+91 9662174670</span>
+                <span className="text-gray-300">+91 74051 08104</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">faizanvhora0505@gmail.com</span>
+                <span className="text-gray-300">info@swisshospitality.co.in</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-blue-400" />

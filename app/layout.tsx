@@ -17,6 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Swiss Hotels & Resorts - Your Dream Travel Partner",
   description: "Discover extraordinary travel experiences with Swiss Hotels & Resorts. From serene beaches to majestic mountains, we craft unforgettable journeys tailored just for you.",
+  icons: {
+    icon: '/swiss-logo.png',
+    shortcut: '/swiss-logo.png',
+    apple: '/swiss-logo.png',
+  },
 };
 
 export default function RootLayout({
