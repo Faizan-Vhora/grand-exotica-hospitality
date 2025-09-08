@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, Facebook, Instagram, Linkedin } from 'lucide-react';
-import logoImg from '../../public/swiss-logo.png';
 
 const navItems = [
   { name: 'HOME', href: '/' },
@@ -47,48 +46,23 @@ export default function Header() {
     >
       <nav className="container mx-auto px-6">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="group flex items-center">
+          {/* Logo - Swiss Hotels & Resorts */}
+          <Link href="/" className="flex items-center">
             <motion.div 
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400 }}
-              className="relative"
             >
-              {/* Subtle professional glow */}
-              <div className="absolute -inset-4 bg-gradient-radial from-white/10 via-transparent to-transparent opacity-50 group-hover:opacity-80 transition-opacity duration-500 blur-xl" />
-              
-              {/* Logo with enhanced visibility */}
-              <div className="relative">
-                <Image
-                  src={logoImg}
-                  alt="Swiss Hospitality"
-                  width={200}
-                  height={65}
-                  className="relative h-12 md:h-14 w-auto"
-                  priority
-                  style={{
-                    filter: 'brightness(1.8) contrast(1.2) sepia(0.3) saturate(2) hue-rotate(15deg) drop-shadow(0 0 20px rgba(255, 215, 0, 0.5)) drop-shadow(0 0 10px rgba(212, 175, 55, 0.6))',
-                    mixBlendMode: 'screen',
-                  }}
-                />
-                
-                {/* Professional text enhancement */}
-                <div className="absolute inset-0 pointer-events-none">
-                  <Image
-                    src={logoImg}
-                    alt="Swiss Hospitality"
-                    width={200}
-                    height={65}
-                    className="h-12 md:h-14 w-auto opacity-30"
-                    style={{
-                      filter: 'blur(1px) brightness(2.5) sepia(0.5) saturate(3) hue-rotate(15deg)',
-                    }}
-                  />
-                </div>
-              </div>
-              
-              {/* Elegant bottom accent */}
-              <div className="absolute -bottom-2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:via-gold/50 transition-colors duration-300" />
+              <Image
+                src="/swiss-logo.png"
+                alt="Swiss Hotels & Resorts"
+                width={200}
+                height={70}
+                className="h-12 md:h-16 w-auto object-contain"
+                priority
+                style={{
+                  filter: 'brightness(1.1)'
+                }}
+              />
             </motion.div>
           </Link>
 
