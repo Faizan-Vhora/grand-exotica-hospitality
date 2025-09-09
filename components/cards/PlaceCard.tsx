@@ -30,7 +30,7 @@ export default function PlaceCard({ place, index = 0 }: PlaceCardProps) {
       </div>
       
       <div className="p-4">
-        <p className="text-gray-600 text-sm">{place.description}</p>
+        <p className="text-gray-700 text-sm">{place.description}</p>
       </div>
     </motion.div>
   );

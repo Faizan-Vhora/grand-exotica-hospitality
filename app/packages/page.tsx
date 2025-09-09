@@ -1,14 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Package, Clock, Star, Sparkles } from 'lucide-react';
+import { Package, Star, Sparkles } from 'lucide-react';
 
 const packages = [
   {
     id: 'honeymoon',
     title: 'Honeymoon Special',
-    duration: '7 Days / 6 Nights',
-    price: '₹45,000',
     rating: 4.9,
     image: 'https://images.unsplash.com/photo-1543039625-14cbd3802e7d?w=800',
     features: ['Romantic Dinners', 'Couple Spa', 'Private Tours', 'Luxury Stay'],
@@ -17,8 +15,6 @@ const packages = [
   {
     id: 'family',
     title: 'Family Adventure',
-    duration: '5 Days / 4 Nights',
-    price: '₹35,000',
     rating: 4.8,
     image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
     features: ['Kid-Friendly', 'Theme Parks', 'Beach Activities', 'Family Suites'],
@@ -27,8 +23,6 @@ const packages = [
   {
     id: 'luxury',
     title: 'Luxury Escape',
-    duration: '10 Days / 9 Nights',
-    price: '₹1,50,000',
     rating: 5.0,
     image: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800',
     features: ['5-Star Hotels', 'Private Jets', 'Yacht Tours', 'Fine Dining'],
@@ -37,8 +31,6 @@ const packages = [
   {
     id: 'adventure',
     title: 'Adventure Seekers',
-    duration: '8 Days / 7 Nights',
-    price: '₹55,000',
     rating: 4.7,
     image: 'https://images.unsplash.com/photo-1533130061792-64b345e4a833?w=800',
     features: ['Trekking', 'Water Sports', 'Safari', 'Camping'],
@@ -47,8 +39,6 @@ const packages = [
   {
     id: 'cultural',
     title: 'Cultural Heritage',
-    duration: '6 Days / 5 Nights',
-    price: '₹28,000',
     rating: 4.6,
     image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800',
     features: ['Heritage Sites', 'Local Cuisine', 'Cultural Shows', 'Guided Tours'],
@@ -57,8 +47,6 @@ const packages = [
   {
     id: 'budget',
     title: 'Budget Friendly',
-    duration: '4 Days / 3 Nights',
-    price: '₹12,000',
     rating: 4.5,
     image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800',
     features: ['Budget Hotels', 'Group Tours', 'Local Transport', 'Street Food'],
@@ -127,18 +115,11 @@ export default function PackagesPage() {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2">{pkg.title}</h3>
+                  <h3 className="text-2xl font-bold mb-2 text-gray-900">{pkg.title}</h3>
                   
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center space-x-2 text-gray-600">
-                      <Clock className="h-4 w-4" />
-                      <span className="text-sm">{pkg.duration}</span>
-                    </div>
-                    <div className="text-2xl font-bold text-green-600">{pkg.price}</div>
-                  </div>
                   
                   <div className="mb-4">
-                    <p className="text-sm text-gray-600 mb-2">Includes:</p>
+                    <p className="text-sm text-gray-700 mb-2">Includes:</p>
                     <div className="flex flex-wrap gap-2">
                       {pkg.features.slice(0, 3).map((feature, idx) => (
                         <span
@@ -152,8 +133,8 @@ export default function PackagesPage() {
                   </div>
                   
                   <div className="mb-4">
-                    <p className="text-sm text-gray-600 mb-2">Destinations:</p>
-                    <p className="text-sm font-medium">{pkg.destinations.join(' • ')}</p>
+                    <p className="text-sm text-gray-700 mb-2">Destinations:</p>
+                    <p className="text-sm font-medium text-gray-900">{pkg.destinations.join(' • ')}</p>
                   </div>
                   
                   <motion.button

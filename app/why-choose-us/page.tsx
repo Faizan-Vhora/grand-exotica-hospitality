@@ -119,7 +119,7 @@ export default function WhyChooseUsPage() {
                 Different
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
               We go above and beyond to ensure your travel experience is exceptional
             </p>
           </motion.div>
@@ -140,13 +140,13 @@ export default function WhyChooseUsPage() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-bold">{reason.title}</h3>
+                      <h3 className="text-xl font-bold text-gray-900">{reason.title}</h3>
                       <div className="text-right">
                         <div className="text-2xl font-bold text-teal-600">{reason.stat}</div>
-                        <div className="text-xs text-gray-500">{reason.statLabel}</div>
+                        <div className="text-xs text-gray-600">{reason.statLabel}</div>
                       </div>
                     </div>
-                    <p className="text-gray-600">{reason.description}</p>
+                    <p className="text-gray-700">{reason.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -170,7 +170,7 @@ export default function WhyChooseUsPage() {
                 Travelers Say
               </span>
             </h2>
-            <p className="text-xl text-gray-600">Real experiences from real travelers</p>
+            <p className="text-xl text-gray-700">Real experiences from real travelers</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -190,8 +190,8 @@ export default function WhyChooseUsPage() {
                 </div>
                 <p className="text-gray-700 mb-4 italic">&ldquo;{testimonial.text}&rdquo;</p>
                 <div className="border-t pt-4">
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.location}</p>
+                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                  <p className="text-sm text-gray-600">{testimonial.location}</p>
                   <p className="text-sm text-teal-600 mt-1">{testimonial.trip}</p>
                 </div>
               </motion.div>

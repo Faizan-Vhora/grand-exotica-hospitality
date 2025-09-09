@@ -22,10 +22,9 @@ export const domesticDestinations: Destination[] = [
     id: 'kashmir',
     name: 'Kashmir',
     description: 'Paradise on Earth with snow-capped mountains, pristine lakes, and beautiful valleys',
-    image: 'https://images.unsplash.com/photo-1558862107-d49ef2a04d72?w=800',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMav2U0VD558HPbl7nP4xos_pIpx9Np-3Ig&s',
     type: 'domestic',
     highlights: ['Dal Lake', 'Gulmarg', 'Pahalgam', 'Sonamarg'],
-    price: 'Starting from ₹25,000',
     places: [
       {
         id: 'srinagar',
@@ -60,7 +59,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800',
     type: 'domestic',
     highlights: ['Manali', 'Shimla', 'Dharamshala', 'Spiti Valley'],
-    price: 'Starting from ₹20,000',
     places: [
       {
         id: 'manali',
@@ -92,10 +90,9 @@ export const domesticDestinations: Destination[] = [
     id: 'kerala',
     name: 'Kerala',
     description: 'Gods Own Country with backwaters, beaches, and ayurvedic wellness',
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc869928?w=800',
+    image: 'https://i0.wp.com/weekendyaari.in/wp-content/uploads/2024/10/kerala-weekend-yaari.jpeg?fit=1280%2C853&ssl=1',
     type: 'domestic',
     highlights: ['Munnar', 'Alleppey', 'Kochi', 'Wayanad'],
-    price: 'Starting from ₹18,000',
     places: [
       {
         id: 'munnar',
@@ -130,7 +127,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1587922347119-f6beb6f18d5f?w=800',
     type: 'domestic',
     highlights: ['Beaches', 'Churches', 'Water Sports', 'Nightlife'],
-    price: 'Starting from ₹15,000',
     places: [
       {
         id: 'north-goa',
@@ -165,7 +161,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1609920658632-31b2a4d2b913?w=800',
     type: 'domestic',
     highlights: ['Rishikesh', 'Mussoorie', 'Nainital', 'Jim Corbett'],
-    price: 'Starting from ₹22,000'
   },
   {
     id: 'gujarat',
@@ -174,7 +169,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1524492514090-27caa7cf4596?w=800',
     type: 'domestic',
     highlights: ['Rann of Kutch', 'Gir Forest', 'Somnath', 'Dwarka'],
-    price: 'Starting from ₹16,000'
   },
   {
     id: 'delhi',
@@ -183,7 +177,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800',
     type: 'domestic',
     highlights: ['Red Fort', 'India Gate', 'Qutub Minar', 'Lotus Temple'],
-    price: 'Starting from ₹12,000',
     places: [
       {
         id: 'old-delhi',
@@ -212,7 +205,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=800',
     type: 'domestic',
     highlights: ['Gateway of India', 'Marine Drive', 'Elephanta Caves', 'Juhu Beach'],
-    price: 'Starting from ₹15,000',
     places: [
       {
         id: 'gateway-india',
@@ -235,7 +227,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1592639296346-560c37a0f711?w=800',
     type: 'domestic',
     highlights: ['Shaniwar Wada', 'Aga Khan Palace', 'Sinhagad Fort', 'Osho Ashram'],
-    price: 'Starting from ₹10,000'
   },
   {
     id: 'hyderabad',
@@ -244,7 +235,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1576906755392-95c8e2280e86?w=800',
     type: 'domestic',
     highlights: ['Charminar', 'Golconda Fort', 'Hussain Sagar', 'Ramoji Film City'],
-    price: 'Starting from ₹14,000',
     places: [
       {
         id: 'charminar',
@@ -267,7 +257,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800',
     type: 'domestic',
     highlights: ['Marina Beach', 'Kapaleeshwarar Temple', 'Fort St. George', 'Mahabalipuram'],
-    price: 'Starting from ₹13,000'
   },
   {
     id: 'bangalore',
@@ -276,7 +265,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=800',
     type: 'domestic',
     highlights: ['Lalbagh Gardens', 'Bangalore Palace', 'Cubbon Park', 'Nandi Hills'],
-    price: 'Starting from ₹12,000',
     places: [
       {
         id: 'lalbagh',
@@ -299,7 +287,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1558431382-27e303142255?w=800',
     type: 'domestic',
     highlights: ['Victoria Memorial', 'Howrah Bridge', 'Mother Teresa House', 'Indian Museum'],
-    price: 'Starting from ₹11,000',
     places: [
       {
         id: 'victoria-memorial',
@@ -322,7 +309,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800',
     type: 'domestic',
     highlights: ['Hawa Mahal', 'Amber Fort', 'City Palace', 'Jantar Mantar'],
-    price: 'Starting from ₹14,000',
     places: [
       {
         id: 'hawa-mahal',
@@ -345,34 +331,30 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1609751816804-01d704b47e05?w=800',
     type: 'domestic',
     highlights: ['Rock Garden', 'Sukhna Lake', 'Rose Garden', 'Capitol Complex'],
-    price: 'Starting from ₹10,000'
   },
   {
     id: 'bhopal',
     name: 'Bhopal',
     description: 'City of Lakes - Historic sites with natural beauty and cultural heritage',
-    image: 'https://images.unsplash.com/photo-1629571330209-2646e61f8193?w=800',
+    image: 'https://images.pexels.com/photos/19160092/pexels-photo-19160092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     type: 'domestic',
     highlights: ['Upper Lake', 'Taj-ul-Masajid', 'Van Vihar', 'Bhimbetka Caves'],
-    price: 'Starting from ₹9,000'
   },
   {
     id: 'indore',
     name: 'Indore',
     description: 'Food Capital of India - Commercial hub with street food and palaces',
-    image: 'https://images.unsplash.com/photo-1620766182966-c0e4f6b4a804?w=800',
+    image: 'https://images.pexels.com/photos/10928705/pexels-photo-10928705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     type: 'domestic',
     highlights: ['Rajwada Palace', 'Lal Bagh Palace', 'Sarafa Bazaar', 'Khajrana Temple'],
-    price: 'Starting from ₹8,000'
   },
   {
     id: 'ahmedabad',
     name: 'Ahmedabad',
     description: 'Heritage City - UNESCO sites with textile industry and Gujarati culture',
-    image: 'https://images.unsplash.com/photo-1606395707276-a682f8e6d0ae?w=800',
+    image: 'https://images.pexels.com/photos/672642/pexels-photo-672642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     type: 'domestic',
     highlights: ['Sabarmati Ashram', 'Kankaria Lake', 'Sidi Saiyyed Mosque', 'Adalaj Stepwell'],
-    price: 'Starting from ₹10,000',
     places: [
       {
         id: 'sabarmati-ashram',
@@ -389,7 +371,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1622471778399-037c9e8c77e7?w=800',
     type: 'domestic',
     highlights: ['Dumas Beach', 'Dutch Garden', 'Surat Castle', 'Science Centre'],
-    price: 'Starting from ₹8,000'
   },
   {
     id: 'lucknow',
@@ -398,7 +379,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1609349093802-d0fdbc100010?w=800',
     type: 'domestic',
     highlights: ['Bara Imambara', 'Chota Imambara', 'Rumi Darwaza', 'Hazratganj'],
-    price: 'Starting from ₹11,000',
     places: [
       {
         id: 'bara-imambara',
@@ -415,7 +395,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800',
     type: 'domestic',
     highlights: ['Taj Mahal', 'Agra Fort', 'Fatehpur Sikri', 'Mehtab Bagh'],
-    price: 'Starting from ₹10,000',
     places: [
       {
         id: 'taj-mahal',
@@ -438,7 +417,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1621418650709-b5db1b316fd0?w=800',
     type: 'domestic',
     highlights: ['Radhanagar Beach', 'Cellular Jail', 'Ross Island', 'Scuba Diving'],
-    price: 'Starting from ₹30,000',
     places: [
       {
         id: 'havelock',
@@ -467,7 +445,6 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1558437348-ff9c2c117010?w=800',
     type: 'domestic',
     highlights: ['Gangtok', 'Tsomgo Lake', 'Nathula Pass', 'Pelling'],
-    price: 'Starting from ₹25,000',
     places: [
       {
         id: 'gangtok',

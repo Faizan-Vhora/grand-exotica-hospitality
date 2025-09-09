@@ -49,7 +49,7 @@ export default function AboutPage() {
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Your Gateway to <span className="text-gold">Luxury Travel</span>
               </h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
                   Swiss Hospitality stands as a beacon of excellence in the luxury travel and hospitality industry. 
                   With over two decades of experience, we have redefined what it means to travel in style and comfort.
@@ -67,15 +67,15 @@ export default function AboutPage() {
               <div className="mt-8 flex gap-6">
                 <div>
                   <h3 className="text-3xl font-bold text-gold">25+</h3>
-                  <p className="text-gray-600">Years of Excellence</p>
+                  <p className="text-gray-700">Years of Excellence</p>
                 </div>
                 <div>
                   <h3 className="text-3xl font-bold text-gold">50+</h3>
-                  <p className="text-gray-600">Destinations</p>
+                  <p className="text-gray-700">Destinations</p>
                 </div>
                 <div>
                   <h3 className="text-3xl font-bold text-gold">10K+</h3>
-                  <p className="text-gray-600">Happy Clients</p>
+                  <p className="text-gray-700">Happy Clients</p>
                 </div>
               </div>
             </motion.div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
                 <Target className="h-8 w-8 text-gold" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 To provide exceptional travel experiences that exceed expectations, creating lasting memories 
                 through personalized service, attention to detail, and a deep understanding of our clients&apos; desires. 
                 We strive to be the bridge between dreams and reality in luxury travel.
@@ -164,7 +164,7 @@ export default function AboutPage() {
                 <Eye className="h-8 w-8 text-gold" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 To be the global leader in luxury travel and hospitality, recognized for our innovation, 
                 sustainability, and commitment to excellence. We envision a world where every journey with 
                 Swiss Hospitality becomes a transformative experience.
@@ -188,7 +188,7 @@ export default function AboutPage() {
               Why Choose <span className="text-gold">Swiss Hospitality</span>
             </h2>
             <div className="w-24 h-[2px] bg-gold mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Experience the difference that sets us apart in the world of luxury travel
             </p>
           </motion.div>
@@ -248,7 +248,7 @@ export default function AboutPage() {
                   <feature.icon className="h-10 w-10 text-gold" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <p className="text-gray-700">{feature.description}</p>
               </motion.div>
             ))}
           </div>
@@ -269,7 +269,7 @@ export default function AboutPage() {
               Our Journey
             </h2>
             <div className="w-24 h-[2px] bg-gold mx-auto mb-8" />
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               A timeline of growth, innovation, and excellence
             </p>
           </motion.div>
@@ -295,7 +295,7 @@ export default function AboutPage() {
                   <div className={`bg-white p-6 rounded-lg shadow-lg ${index % 2 === 0 ? 'mr-8' : 'ml-8'}`}>
                     <h3 className="text-2xl font-bold text-gold mb-2">{milestone.year}</h3>
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">{milestone.title}</h4>
-                    <p className="text-gray-600">{milestone.desc}</p>
+                    <p className="text-gray-700">{milestone.desc}</p>
                   </div>
                 </div>
                 <div className="w-4 h-4 bg-gold rounded-full border-4 border-white shadow-lg" />

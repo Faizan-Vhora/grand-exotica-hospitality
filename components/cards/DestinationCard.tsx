@@ -40,26 +40,7 @@ export default function DestinationCard({ destination, index = 0 }: DestinationC
       </div>
       
       <div className="p-6">
-        <p className="text-gray-600 mb-4 line-clamp-2">{destination.description}</p>
-        
-        {destination.highlights && (
-          <div className="mb-4">
-            <div className="flex flex-wrap gap-2">
-              {destination.highlights.slice(0, 3).map((highlight, idx) => (
-                <span
-                  key={idx}
-                  className="px-3 py-1 bg-blue-50 text-blue-600 text-sm rounded-full"
-                >
-                  {highlight}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-        
-        {destination.price && (
-          <p className="text-lg font-semibold text-green-600 mb-4">{destination.price}</p>
-        )}
+        <p className="text-gray-700 mb-6 line-clamp-2">{destination.description}</p>
         
         <Link
           href={`${baseUrl}/${destination.id}`}

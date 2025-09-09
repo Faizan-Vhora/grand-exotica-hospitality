@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Star, Clock, DollarSign, Globe, Plane, Building, Palmtree, Mountain, Camera, Heart, Sparkles } from 'lucide-react';
+import { Star, Globe, Plane, Building, Palmtree, Mountain, Camera, Heart, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 const internationalDestinations = [
@@ -12,12 +12,8 @@ const internationalDestinations = [
     country: 'UAE',
     description: 'City of Gold - Experience luxury shopping, ultramodern architecture, and vibrant nightlife',
     image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070',
-    price: '₹45,000',
-    duration: '5 Days',
     rating: 4.9,
     category: ['Luxury', 'Shopping', 'Modern'],
-    highlights: ['Burj Khalifa', 'Desert Safari', 'Dubai Mall', 'Palm Jumeirah'],
-    bestTime: 'Nov - Mar',
     activities: ['Shopping', 'Desert Safari', 'Skydiving', 'Yacht Tours']
   },
   {
@@ -26,12 +22,8 @@ const internationalDestinations = [
     country: 'Singapore',
     description: 'Garden City - A perfect blend of culture, cuisine, arts and architecture',
     image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=2070',
-    price: '₹55,000',
-    duration: '4 Days',
     rating: 4.8,
     category: ['Modern', 'Gardens', 'Culture'],
-    highlights: ['Marina Bay Sands', 'Gardens by the Bay', 'Sentosa', 'Universal Studios'],
-    bestTime: 'Feb - Apr',
     activities: ['Theme Parks', 'Gardens', 'Shopping', 'Food Tours']
   },
   {
@@ -40,12 +32,8 @@ const internationalDestinations = [
     country: 'Maldives',
     description: 'Tropical Paradise - Crystal clear waters, pristine beaches, and luxury resorts',
     image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2070',
-    price: '₹75,000',
-    duration: '6 Days',
     rating: 4.9,
     category: ['Beach', 'Luxury', 'Romance'],
-    highlights: ['Overwater Villas', 'Snorkeling', 'Spa', 'Private Islands'],
-    bestTime: 'Nov - Apr',
     activities: ['Diving', 'Water Sports', 'Island Hopping', 'Spa']
   },
   {
@@ -54,12 +42,8 @@ const internationalDestinations = [
     country: 'Thailand',
     description: 'Land of Smiles - Ancient temples, tropical beaches, and vibrant street life',
     image: 'https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?q=80&w=2070',
-    price: '₹35,000',
-    duration: '7 Days',
     rating: 4.7,
     category: ['Beach', 'Culture', 'Adventure'],
-    highlights: ['Bangkok Temples', 'Phuket Beaches', 'Phi Phi Islands', 'Street Food'],
-    bestTime: 'Nov - Feb',
     activities: ['Island Tours', 'Temple Visits', 'Thai Massage', 'Street Food']
   },
   {
@@ -68,12 +52,8 @@ const internationalDestinations = [
     country: 'Switzerland',
     description: 'Alpine Paradise - Snow-capped peaks, pristine lakes, and charming villages',
     image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=2070',
-    price: '₹85,000',
-    duration: '8 Days',
     rating: 4.9,
     category: ['Mountains', 'Nature', 'Luxury'],
-    highlights: ['Jungfraujoch', 'Matterhorn', 'Swiss Alps', 'Lake Geneva'],
-    bestTime: 'Jun - Sep',
     activities: ['Skiing', 'Hiking', 'Scenic Trains', 'Chocolate Tours']
   },
   {
@@ -82,12 +62,8 @@ const internationalDestinations = [
     country: 'Indonesia',
     description: 'Island of Gods - Stunning beaches, ancient temples, and lush rice terraces',
     image: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?q=80&w=2070',
-    price: '₹40,000',
-    duration: '6 Days',
     rating: 4.8,
     category: ['Beach', 'Culture', 'Nature'],
-    highlights: ['Ubud Rice Terraces', 'Tanah Lot', 'Seminyak Beach', 'Monkey Forest'],
-    bestTime: 'Apr - Oct',
     activities: ['Surfing', 'Temple Tours', 'Yoga', 'Spa']
   },
   {
@@ -96,12 +72,8 @@ const internationalDestinations = [
     country: 'France',
     description: 'City of Love - Iconic landmarks, world-class art, and exquisite cuisine',
     image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2070',
-    price: '₹70,000',
-    duration: '5 Days',
     rating: 4.8,
     category: ['Culture', 'Romance', 'Art'],
-    highlights: ['Eiffel Tower', 'Louvre Museum', 'Notre-Dame', 'Champs-Élysées'],
-    bestTime: 'Apr - Jun',
     activities: ['Museums', 'Wine Tasting', 'River Cruise', 'Shopping']
   },
   {
@@ -110,12 +82,8 @@ const internationalDestinations = [
     country: 'Turkey',
     description: 'Where East Meets West - Rich history, stunning landscapes, and warm hospitality',
     image: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=2070',
-    price: '₹48,000',
-    duration: '7 Days',
     rating: 4.7,
     category: ['Culture', 'History', 'Adventure'],
-    highlights: ['Cappadocia', 'Istanbul', 'Pamukkale', 'Blue Mosque'],
-    bestTime: 'Apr - May, Sep - Nov',
     activities: ['Hot Air Balloon', 'Historical Tours', 'Turkish Bath', 'Bazaar Shopping']
   },
   {
@@ -124,12 +92,8 @@ const internationalDestinations = [
     country: 'Egypt',
     description: 'Land of Pharaohs - Ancient pyramids, mysterious tombs, and the mighty Nile',
     image: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=2070',
-    price: '₹52,000',
-    duration: '6 Days',
     rating: 4.6,
     category: ['History', 'Culture', 'Adventure'],
-    highlights: ['Pyramids of Giza', 'Valley of Kings', 'Nile Cruise', 'Abu Simbel'],
-    bestTime: 'Oct - Apr',
     activities: ['Pyramid Tours', 'Nile Cruise', 'Desert Safari', 'Diving in Red Sea']
   }
 ];
@@ -291,21 +255,6 @@ export default function InternationalPage() {
                         <h3 className="text-3xl font-bold text-white mb-2">{destination.name}</h3>
                         <p className="text-gray-300 mb-4 line-clamp-2">{destination.description}</p>
                         
-                        {/* Info Grid */}
-                        <div className="grid grid-cols-3 gap-3 mb-4">
-                          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 text-center">
-                            <DollarSign className="h-4 w-4 text-gold mx-auto mb-1" />
-                            <p className="text-white text-sm font-semibold">{destination.price}</p>
-                          </div>
-                          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 text-center">
-                            <Clock className="h-4 w-4 text-gold mx-auto mb-1" />
-                            <p className="text-white text-sm font-semibold">{destination.duration}</p>
-                          </div>
-                          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2 text-center">
-                            <Calendar className="h-4 w-4 text-gold mx-auto mb-1" />
-                            <p className="text-white text-sm font-semibold">{destination.bestTime}</p>
-                          </div>
-                        </div>
                         
                         {/* Activities - Show on Hover */}
                         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">

@@ -92,13 +92,13 @@ export default function ServicesPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
               Everything You Need for{' '}
               <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 Perfect Travel
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
               From planning to experiencing, we handle every detail of your journey
             </p>
           </motion.div>
@@ -117,8 +117,8 @@ export default function ServicesPage() {
                 <div className={`w-16 h-16 mb-4 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center`}>
                   <service.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">{service.title}</h3>
+                <p className="text-gray-700">{service.description}</p>
               </motion.div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function ServicesPage() {
             transition={{ duration: 0.6 }}
             className="mt-20"
           >
-            <h3 className="text-2xl font-bold text-center mb-8">Additional Benefits</h3>
+            <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">Additional Benefits</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {additionalServices.map((service, index) => (
                 <motion.div
@@ -144,8 +144,8 @@ export default function ServicesPage() {
                   <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-gray-100 flex items-center justify-center">
                     <service.icon className="h-6 w-6 text-gray-700" />
                   </div>
-                  <h4 className="font-semibold text-sm mb-1">{service.title}</h4>
-                  <p className="text-xs text-gray-600">{service.description}</p>
+                  <h4 className="font-semibold text-sm mb-1 text-gray-900">{service.title}</h4>
+                  <p className="text-xs text-gray-700">{service.description}</p>
                 </motion.div>
               ))}
             </div>

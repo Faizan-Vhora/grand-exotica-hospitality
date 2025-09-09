@@ -47,11 +47,11 @@ export default function LuxuryExperiences() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-600 mb-4">LUXURIOUS EXPERIENCES</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-gray-700 mb-4">LUXURIOUS EXPERIENCES</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
             Indulge In Unmatched Luxury
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Discover our range of bespoke services designed to elevate your stay to new heights of extravagance and comfort.
           </p>
         </motion.div>
@@ -87,7 +87,7 @@ export default function LuxuryExperiences() {
               <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
                 {exp.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed max-w-xs">
+              <p className="text-gray-700 leading-relaxed max-w-xs">
                 {exp.description}
               </p>
             </motion.div>
@@ -108,7 +108,7 @@ export default function LuxuryExperiences() {
           <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
             Ready for a Luxurious Escape?
           </h3>
-          <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-600">
+          <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-700">
             Let us craft your perfect luxury travel experience with exclusive perks and personalized service
           </p>
           <motion.button

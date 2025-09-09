@@ -2,10 +2,9 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Star, Globe, Users, Award, MapPin, Calendar, Shield, Sparkles, Building } from 'lucide-react';
+import { ArrowRight, Star, Globe, Users, Award, MapPin, Calendar, Shield, Sparkles, Building, Hotel, Crown } from 'lucide-react';
 import HeroSection from '@/components/sections/HeroSection';
 import LuxuryExperiences from '@/components/sections/LuxuryExperiences';
-import MembershipPlans from '@/components/sections/MembershipPlans';
 import InquiryForm from '@/components/sections/InquiryForm';
 import { domesticDestinations, internationalDestinations } from '@/data/destinations';
 
@@ -84,19 +83,19 @@ export default function HomePage() {
                 icon: MapPin,
                 title: 'Luxury Tours',
                 desc: 'Curated travel experiences to the world\'s most exclusive destinations',
-                image: 'https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?q=80&w=1000'
+                image: 'https://vietnamtour.in/wp-content/uploads/Luxury-min-1-400x300.jpg'
               },
               {
                 icon: Calendar,
                 title: 'Event Planning',
                 desc: 'Bespoke event management for weddings, corporate retreats, and celebrations',
-                image: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1000'
+                image: 'https://www.srisowbarnikaadecorator.com/wp-content/uploads/2023/01/10-Tips-for-Professional-Corporate-Event-Planning.jpg'
               },
               {
                 icon: Shield,
                 title: 'Concierge Services',
                 desc: '24/7 personalized assistance for all your travel and lifestyle needs',
-                image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1000'
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQZPj61KIuNc_goLgYP-xQBQ9hrMoNApgJA&s'
               }
             ].map((service, index) => (
               <motion.div
@@ -173,10 +172,6 @@ export default function HomePage() {
                       <div className="absolute bottom-0 left-0 right-0 p-6">
                         <h3 className="text-2xl font-bold text-white mb-2">{destination.name}</h3>
                         <p className="text-gray-300 mb-4">{destination.description.slice(0, 100)}...</p>
-                        <div className="flex items-center justify-between">
-                          <span className="text-gold font-semibold">{destination.price || 'Contact for pricing'}</span>
-                          <span className="text-gray-400">{destination.highlights?.[0] || ''}</span>
-                        </div>
                       </div>
                     </div>
                   </Link>
@@ -233,10 +228,6 @@ export default function HomePage() {
                       <div className="absolute bottom-0 left-0 right-0 p-6">
                         <h3 className="text-2xl font-bold text-white mb-2">{destination.name}</h3>
                         <p className="text-gray-300 mb-4">{destination.description.slice(0, 100)}...</p>
-                        <div className="flex items-center justify-between">
-                          <span className="text-gold font-semibold">{destination.price || 'Contact for pricing'}</span>
-                          <span className="text-gray-400">{destination.highlights?.[0] || ''}</span>
-                        </div>
                       </div>
                     </div>
                   </Link>
@@ -249,9 +240,6 @@ export default function HomePage() {
 
 
       <LuxuryExperiences />
-      
-      {/* Membership Plans Section */}
-      <MembershipPlans />
       
       {/* Our Companies Section */}
       <section className="py-24 bg-black">
@@ -325,7 +313,7 @@ export default function HomePage() {
               <div 
                 className="h-[450px] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                 style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=2070')`
+                  backgroundImage: `url('https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
@@ -366,7 +354,7 @@ export default function HomePage() {
               <div 
                 className="h-[450px] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                 style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2070')`
+                  backgroundImage: `url('https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
@@ -397,33 +385,6 @@ export default function HomePage() {
             </motion.div>
           </div>
 
-          {/* Stats Bar */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-16 bg-gradient-to-r from-gold to-yellow-600 rounded-2xl p-8"
-          >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <h4 className="text-4xl font-bold text-black">100+</h4>
-                <p className="text-black/80 font-medium">Luxury Properties</p>
-              </div>
-              <div>
-                <h4 className="text-4xl font-bold text-black">500+</h4>
-                <p className="text-black/80 font-medium">Events Organized</p>
-              </div>
-              <div>
-                <h4 className="text-4xl font-bold text-black">25+</h4>
-                <p className="text-black/80 font-medium">Years Experience</p>
-              </div>
-              <div>
-                <h4 className="text-4xl font-bold text-black">50K+</h4>
-                <p className="text-black/80 font-medium">Happy Guests</p>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </section>
       
@@ -443,7 +404,7 @@ export default function HomePage() {
             <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: Sparkles,
@@ -464,6 +425,21 @@ export default function HomePage() {
                 icon: Users,
                 title: 'Expert Guides',
                 desc: 'Local experts who bring destinations to life'
+              },
+              {
+                icon: Hotel,
+                title: 'Premium Hotels',
+                desc: 'Access to luxury properties worldwide'
+              },
+              {
+                icon: Globe,
+                title: 'Global Coverage',
+                desc: 'Travel to destinations across the globe'
+              },
+              {
+                icon: Crown,
+                title: 'VIP Treatment',
+                desc: 'Exclusive perks and priority service'
               }
             ].map((feature, index) => (
               <motion.div
