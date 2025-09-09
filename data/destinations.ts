@@ -22,7 +22,7 @@ export const domesticDestinations: Destination[] = [
     id: 'kashmir',
     name: 'Kashmir',
     description: 'Paradise on Earth with snow-capped mountains, pristine lakes, and beautiful valleys',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMav2U0VD558HPbl7nP4xos_pIpx9Np-3Ig&s',
+    image: 'https://images.pexels.com/photos/3974036/pexels-photo-3974036.jpeg?auto=compress&cs=tinysrgb&w=800',
     type: 'domestic',
     highlights: ['Dal Lake', 'Gulmarg', 'Pahalgam', 'Sonamarg'],
     places: [
@@ -36,19 +36,19 @@ export const domesticDestinations: Destination[] = [
         id: 'gulmarg',
         name: 'Gulmarg',
         description: 'Skiing paradise and meadow of flowers',
-        image: 'https://images.unsplash.com/photo-1614116685364-cf0ed36e9d2b?w=800'
+        image: 'https://images.pexels.com/photos/14374647/pexels-photo-14374647.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'pahalgam',
         name: 'Pahalgam',
         description: 'Valley of Shepherds with scenic beauty',
-        image: 'https://images.unsplash.com/photo-1598977123118-4e30ba0c7ea8?w=800'
+        image: 'https://images.pexels.com/photos/7562495/pexels-photo-7562495.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'sonamarg',
         name: 'Sonamarg',
         description: 'Meadow of Gold with glaciers and lakes',
-        image: 'https://images.unsplash.com/photo-1581791532176-afcef38f17a0?w=800'
+        image: 'https://images.pexels.com/photos/2439787/pexels-photo-2439787.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
@@ -56,7 +56,7 @@ export const domesticDestinations: Destination[] = [
     id: 'himachal',
     name: 'Himachal Pradesh',
     description: 'Land of Gods with majestic Himalayas, adventure sports, and spiritual retreats',
-    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800',
+    image: 'https://images.unsplash.com/photo-1597074866923-dc0589150358?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGltYWNoYWwlMjBwcmFkZXNofGVufDB8fDB8fHww',
     type: 'domestic',
     highlights: ['Manali', 'Shimla', 'Dharamshala', 'Spiti Valley'],
     places: [
@@ -64,7 +64,7 @@ export const domesticDestinations: Destination[] = [
         id: 'manali',
         name: 'Manali',
         description: 'Adventure hub with snow activities and scenic beauty',
-        image: 'https://images.unsplash.com/photo-1593181629936-7f555869c7b0?w=800'
+        image: 'https://images.pexels.com/photos/939714/pexels-photo-939714.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'shimla',
@@ -76,13 +76,47 @@ export const domesticDestinations: Destination[] = [
         id: 'dharamshala',
         name: 'Dharamshala',
         description: 'Home of Dalai Lama with Tibetan culture',
-        image: 'https://images.unsplash.com/photo-1585134040852-dc8665f84e39?w=800'
+        image: 'https://images.pexels.com/photos/26382825/pexels-photo-26382825.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'spiti',
         name: 'Spiti Valley',
         description: 'Cold desert mountain valley with Buddhist monasteries',
-        image: 'https://images.unsplash.com/photo-1589308078059-be1415c76c65?w=800'
+        image: 'https://images.pexels.com/photos/31756521/pexels-photo-31756521.jpeg?auto=compress&cs=tinysrgb&w=800'
+      }
+    ]
+  },
+  {
+    id: 'goa',
+    name: 'Goa',
+    description: 'Beach paradise with Portuguese heritage, vibrant nightlife, and water sports',
+    image: 'https://images.pexels.com/photos/4428289/pexels-photo-4428289.jpeg?auto=compress&cs=tinysrgb&w=800',
+    type: 'domestic',
+    highlights: ['Beaches', 'Churches', 'Water Sports', 'Nightlife'],
+    places: [
+      {
+        id: 'north-goa',
+        name: 'North Goa',
+        description: 'Vibrant beaches with happening nightlife',
+        image: 'https://images.pexels.com/photos/33788031/pexels-photo-33788031.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'south-goa',
+        name: 'South Goa',
+        description: 'Serene beaches with luxury resorts',
+        image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800'
+      },
+      {
+        id: 'old-goa',
+        name: 'Old Goa',
+        description: 'UNESCO heritage churches and monuments',
+        image: 'https://images.pexels.com/photos/6320394/pexels-photo-6320394.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'dudhsagar',
+        name: 'Dudhsagar Falls',
+        description: 'Spectacular four-tiered waterfall',
+        image: 'https://images.pexels.com/photos/1236906/pexels-photo-1236906.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
@@ -110,47 +144,13 @@ export const domesticDestinations: Destination[] = [
         id: 'kochi',
         name: 'Kochi',
         description: 'Queen of Arabian Sea with Chinese fishing nets',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'
+        image: 'https://images.unsplash.com/photo-1602094395895-fb8070114e38?w=800'
       },
       {
         id: 'wayanad',
         name: 'Wayanad',
         description: 'Green paradise with wildlife and waterfalls',
         image: 'https://images.unsplash.com/photo-1596123068616-9057516a0831?w=800'
-      }
-    ]
-  },
-  {
-    id: 'goa',
-    name: 'Goa',
-    description: 'Beach paradise with Portuguese heritage, vibrant nightlife, and water sports',
-    image: 'https://images.unsplash.com/photo-1587922347119-f6beb6f18d5f?w=800',
-    type: 'domestic',
-    highlights: ['Beaches', 'Churches', 'Water Sports', 'Nightlife'],
-    places: [
-      {
-        id: 'north-goa',
-        name: 'North Goa',
-        description: 'Vibrant beaches with happening nightlife',
-        image: 'https://images.unsplash.com/photo-1614082730020-5e4b01ba1ac3?w=800'
-      },
-      {
-        id: 'south-goa',
-        name: 'South Goa',
-        description: 'Serene beaches with luxury resorts',
-        image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800'
-      },
-      {
-        id: 'old-goa',
-        name: 'Old Goa',
-        description: 'UNESCO heritage churches and monuments',
-        image: 'https://images.unsplash.com/photo-1587974928054-e80ec8a0d7f1?w=800'
-      },
-      {
-        id: 'dudhsagar',
-        name: 'Dudhsagar Falls',
-        description: 'Spectacular four-tiered waterfall',
-        image: 'https://images.unsplash.com/photo-1626196089187-85e80a24aa9a?w=800'
       }
     ]
   },
@@ -708,7 +708,7 @@ export const internationalDestinations: Destination[] = [
         id: 'victoria-falls',
         name: 'Victoria Falls',
         description: 'The smoke that thunders - world\'s largest waterfall',
-        image: 'https://images.unsplash.com/photo-1589998059171-988d887df646?w=800'
+        image: 'https://images.unsplash.com/photo-1618811308896-d279d72fdf4d?w=800'
       },
       {
         id: 'serengeti',

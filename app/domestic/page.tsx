@@ -75,7 +75,7 @@ const destinations = [
     name: 'Himachal Pradesh',
     tagline: 'Dev Bhoomi',
     description: 'Snow-clad peaks, adventure sports, hill stations, and scenic valleys',
-    image: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=2070',
+    image: 'https://images.unsplash.com/photo-1597074866923-dc0589150358?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGltYWNoYWwlMjBwcmFkZXNofGVufDB8fDB8fHww',
     rating: 4.7,
     category: 'Hills',
     activities: ['Trekking', 'Paragliding', 'River Rafting', 'Skiing']
@@ -185,7 +185,7 @@ const destinations = [
     name: 'Chandigarh',
     tagline: 'The Planned City',
     description: 'Modern architecture with gardens, lakes, and organized urban design',
-    image: 'https://images.unsplash.com/photo-1543158266-0066955047b1?w=800',
+    image: 'https://images.unsplash.com/photo-1716131985076-07350de31afd?w=800',
     rating: 4.3,
     category: 'Urban',
     activities: ['Garden Tours', 'Boating', 'Shopping', 'Museums']
@@ -225,7 +225,7 @@ const destinations = [
     name: 'Surat',
     tagline: 'Diamond City',
     description: 'Textile and diamond hub with beaches, gardens, and historic sites',
-    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800',
+    image: 'https://images.pexels.com/photos/33793268/pexels-photo-33793268.jpeg?auto=compress&cs=tinysrgb&w=800',
     rating: 4.1,
     category: 'Urban',
     activities: ['Beach Visit', 'Garden Tours', 'Shopping', 'Food Tour']
@@ -269,7 +269,7 @@ export default function DomesticPage() {
       <section 
         className="relative h-[80vh] flex items-center justify-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=2070')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.pexels.com/photos/28762053/pexels-photo-28762053.jpeg?auto=compress&cs=tinysrgb&w=2070')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center bottom',
           backgroundAttachment: 'fixed'

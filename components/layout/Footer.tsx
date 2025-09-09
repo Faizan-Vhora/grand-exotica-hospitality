@@ -111,13 +111,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/domestic/kerala" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Kerala
+                <Link href="/domestic/goa" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  Goa
                 </Link>
               </li>
               <li>
                 <Link href="/international/asia" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Thailand
+                  Asia
                 </Link>
               </li>
               <li>

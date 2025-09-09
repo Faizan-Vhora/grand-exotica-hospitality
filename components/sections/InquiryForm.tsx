@@ -207,7 +207,7 @@ export default function InquiryForm() {
             </div>
             <div>
               <h4 className="text-gold font-semibold mb-2">Visit Us</h4>
-              <p className="text-gray-400">Mumbai, India</p>
+              <p className="text-gray-400">Ahmedabad, India</p>
             </div>
           </div>
         </motion.div>

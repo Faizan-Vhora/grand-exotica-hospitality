@@ -6,6 +6,7 @@ import { ArrowRight, Star, Globe, Users, Award, MapPin, Calendar, Shield, Sparkl
 import HeroSection from '@/components/sections/HeroSection';
 import LuxuryExperiences from '@/components/sections/LuxuryExperiences';
 import InquiryForm from '@/components/sections/InquiryForm';
+import PartnersSection from '@/components/sections/PartnersSection';
 import { domesticDestinations, internationalDestinations } from '@/data/destinations';
 
 export default function HomePage() {
@@ -83,7 +84,7 @@ export default function HomePage() {
                 icon: MapPin,
                 title: 'Luxury Tours',
                 desc: 'Curated travel experiences to the world\'s most exclusive destinations',
-                image: 'https://vietnamtour.in/wp-content/uploads/Luxury-min-1-400x300.jpg'
+                image: 'https://images.pexels.com/photos/5087055/pexels-photo-5087055.jpeg?auto=compress&cs=tinysrgb&w=800'
               },
               {
                 icon: Calendar,
@@ -95,7 +96,7 @@ export default function HomePage() {
                 icon: Shield,
                 title: 'Concierge Services',
                 desc: '24/7 personalized assistance for all your travel and lifestyle needs',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQZPj61KIuNc_goLgYP-xQBQ9hrMoNApgJA&s'
+                image: 'https://images.pexels.com/photos/3769980/pexels-photo-3769980.jpeg?auto=compress&cs=tinysrgb&w=800'
               }
             ].map((service, index) => (
               <motion.div
@@ -417,11 +418,6 @@ export default function HomePage() {
                 desc: 'Your security and well-being are our top priorities'
               },
               {
-                icon: Award,
-                title: 'Award Winning',
-                desc: 'Recognized globally for excellence in luxury travel'
-              },
-              {
                 icon: Users,
                 title: 'Expert Guides',
                 desc: 'Local experts who bring destinations to life'
@@ -458,6 +454,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
+      <PartnersSection />
       
       <InquiryForm />
     </div>
