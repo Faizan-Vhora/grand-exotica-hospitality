@@ -126,13 +126,13 @@ export const domesticDestinations: Destination[] = [
     description: 'Gods Own Country with backwaters, beaches, and ayurvedic wellness',
     image: 'https://i0.wp.com/weekendyaari.in/wp-content/uploads/2024/10/kerala-weekend-yaari.jpeg?fit=1280%2C853&ssl=1',
     type: 'domestic',
-    highlights: ['Munnar', 'Alleppey', 'Kochi', 'Wayanad'],
+    highlights: ['Munnar', 'Alleppey', 'Kochi', 'Thekkady'],
     places: [
       {
         id: 'munnar',
         name: 'Munnar',
         description: 'Tea plantations and misty mountains',
-        image: 'https://images.unsplash.com/photo-1596392927852-2a18c336d911?w=800'
+        image: 'https://images.pexels.com/photos/13691356/pexels-photo-13691356.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'alleppey',
@@ -150,7 +150,13 @@ export const domesticDestinations: Destination[] = [
         id: 'wayanad',
         name: 'Wayanad',
         description: 'Green paradise with wildlife and waterfalls',
-        image: 'https://images.unsplash.com/photo-1596123068616-9057516a0831?w=800'
+        image: 'https://images.pexels.com/photos/27728557/pexels-photo-27728557.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'thekkady',
+        name: 'Thekkady',
+        description: 'Wildlife sanctuary with elephant rides and spice plantations',
+        image: 'https://images.pexels.com/photos/6444290/pexels-photo-6444290.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
@@ -308,19 +314,37 @@ export const domesticDestinations: Destination[] = [
     description: 'Land of Kings - Royal heritage with magnificent palaces, forts, and desert',
     image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800',
     type: 'domestic',
-    highlights: ['Hawa Mahal', 'Amber Fort', 'City Palace', 'Jantar Mantar'],
+    highlights: ['Jaipur', 'Udaipur', 'Jaisalmer', 'Mount Abu'],
     places: [
       {
-        id: 'hawa-mahal',
-        name: 'Hawa Mahal',
-        description: 'Palace of Winds with unique facade',
-        image: 'https://images.unsplash.com/photo-1524230616393-d494d0a54ca0?w=800'
+        id: 'jaipur',
+        name: 'Jaipur',
+        description: 'Pink City with palaces, forts and vibrant culture',
+        image: 'https://images.pexels.com/photos/784885/pexels-photo-784885.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
-        id: 'amber-fort',
-        name: 'Amber Fort',
-        description: 'Hilltop fortress with stunning architecture',
-        image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800'
+        id: 'udaipur',
+        name: 'Udaipur',
+        description: 'City of Lakes with romantic palaces and scenic beauty',
+        image: 'https://images.pexels.com/photos/18526644/pexels-photo-18526644.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'jaisalmer',
+        name: 'Jaisalmer',
+        description: 'Golden City with desert safaris and sand dunes',
+        image: 'https://images.pexels.com/photos/31648803/pexels-photo-31648803.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'mount-abu',
+        name: 'Mount Abu',
+        description: 'Hill station with cool climate and Dilwara Temples',
+        image: 'https://images.pexels.com/photos/12080704/pexels-photo-12080704.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'jawai',
+        name: 'Jawai',
+        description: 'Leopard hills with wildlife safaris and granite rocks',
+        image: 'https://images.pexels.com/photos/30788733/pexels-photo-30788733.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
@@ -422,13 +446,13 @@ export const domesticDestinations: Destination[] = [
         id: 'havelock',
         name: 'Havelock Island',
         description: 'Paradise island with pristine beaches and diving spots',
-        image: 'https://images.unsplash.com/photo-1616892571111-5bb426566317?w=800'
+        image: 'https://images.pexels.com/photos/33861338/pexels-photo-33861338.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'neil-island',
         name: 'Neil Island',
         description: 'Tranquil island with coral reefs and natural bridges',
-        image: 'https://images.unsplash.com/photo-1582967788606-a171e71080cb?w=800'
+        image: 'https://images.pexels.com/photos/14313849/pexels-photo-14313849.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'port-blair',
@@ -463,6 +487,40 @@ export const domesticDestinations: Destination[] = [
         name: 'Pelling',
         description: 'Hill station with Kanchenjunga views and skywalk',
         image: 'https://images.unsplash.com/photo-1566205246638-fc3c82368945?w=800'
+      }
+    ]
+  },
+  {
+    id: 'ladakh',
+    name: 'Ladakh',
+    description: 'Land of High Passes with rugged landscapes, Buddhist monasteries, and pristine beauty',
+    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800',
+    type: 'domestic',
+    highlights: ['Pangong Lake', 'Nubra Valley', 'Magnetic Hills', 'Tso Moriri'],
+    places: [
+      {
+        id: 'pangong-lake',
+        name: 'Pangong Lake',
+        description: 'Crystal blue lake at high altitude with changing colors',
+        image: 'https://images.pexels.com/photos/33792550/pexels-photo-33792550.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'nubra-valley',
+        name: 'Nubra Valley',
+        description: 'Valley of flowers with sand dunes and double-humped camels',
+        image: 'https://images.pexels.com/photos/2735739/pexels-photo-2735739.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'magnetic-hills',
+        name: 'Magnetic Hills',
+        description: 'Gravity-defying hills with optical illusion phenomenon',
+        image: 'https://images.pexels.com/photos/14095829/pexels-photo-14095829.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'tso-moriri',
+        name: 'Tso Moriri Lake',
+        description: 'High altitude lake surrounded by snow-capped mountains',
+        image: 'https://images.pexels.com/photos/5784210/pexels-photo-5784210.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   }
@@ -607,7 +665,7 @@ export const internationalDestinations: Destination[] = [
         id: 'edinburgh',
         name: 'Edinburgh, Scotland',
         description: 'Medieval castle, Royal Mile, and Scottish heritage',
-        image: 'https://images.unsplash.com/photo-1551871812-10ecc21ffa2f?w=800'
+        image: 'https://images.pexels.com/photos/1724926/pexels-photo-1724926.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'copenhagen',
@@ -649,13 +707,13 @@ export const internationalDestinations: Destination[] = [
         id: 'brussels',
         name: 'Brussels, Belgium',
         description: 'Grand Place, Belgian chocolates, and EU headquarters',
-        image: 'https://images.unsplash.com/photo-1559113513-d5e09c78b9dd?w=800'
+        image: 'https://images.pexels.com/photos/870799/pexels-photo-870799.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'krakow',
         name: 'Krakow, Poland',
         description: 'Medieval square, Jewish quarter, and rich history',
-        image: 'https://images.unsplash.com/photo-1559553156-2e97137af16f?w=800'
+        image: 'https://images.pexels.com/photos/1674432/pexels-photo-1674432.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'florence',

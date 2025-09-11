@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import PlaceCard from '@/components/cards/PlaceCard';
@@ -32,12 +31,10 @@ export default async function DestinationDetailPage({ params }: { params: Promis
     <div className="pt-24 pb-20">
       <ClientMotion>
         <section className="relative h-[60vh] min-h-[400px]">
-          <Image
+          <img
             src={destination.image}
             alt={destination.name}
-            fill
-            className="object-cover"
-            priority
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
           

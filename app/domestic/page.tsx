@@ -336,8 +336,6 @@ export default function DomesticPage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -30 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  onHoverStart={() => setHoveredCard(destination.id)}
-                  onHoverEnd={() => setHoveredCard(null)}
                   className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
                 >
                   {/* Image Container */}
@@ -354,11 +352,6 @@ export default function DomesticPage() {
                       <span className="text-sm font-semibold text-black">{destination.category}</span>
                     </div>
                     
-                    {/* Rating */}
-                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-1">
-                      <Star className="h-4 w-4 text-gold fill-current" />
-                      <span className="text-sm text-white">{destination.rating}</span>
-                    </div>
                     
                     {/* Title Overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -388,26 +381,6 @@ export default function DomesticPage() {
                     </div>
                   </div>
                   
-                  {/* Hover Activities Overlay */}
-                  <AnimatePresence>
-                    {hoveredCard === destination.id && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 20 }}
-                        className="absolute inset-x-0 bottom-0 bg-black/95 backdrop-blur-sm p-6 transform"
-                      >
-                        <p className="text-white font-semibold mb-3">Popular Activities:</p>
-                        <div className="flex flex-wrap gap-2">
-                          {destination.activities.map((activity, idx) => (
-                            <span key={idx} className="text-xs bg-gold/20 text-gold px-3 py-1 rounded-full">
-                              {activity}
-                            </span>
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
                 </motion.div>
               ))}
             </motion.div>

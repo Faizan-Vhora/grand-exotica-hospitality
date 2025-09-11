@@ -244,11 +244,6 @@ export default function InternationalPage() {
                         <span className="text-black font-semibold text-sm">{destination.country}</span>
                       </div>
                       
-                      {/* Rating */}
-                      <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-1">
-                        <Star className="h-4 w-4 text-gold fill-current" />
-                        <span className="text-white font-semibold">{destination.rating}</span>
-                      </div>
                       
                       {/* Content */}
                       <div className="absolute bottom-0 left-0 right-0 p-6">
