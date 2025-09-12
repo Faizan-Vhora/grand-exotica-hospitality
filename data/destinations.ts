@@ -188,19 +188,37 @@ export const domesticDestinations: Destination[] = [
         id: 'old-delhi',
         name: 'Old Delhi',
         description: 'Historic heart with Red Fort and Chandni Chowk',
-        image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800'
+        image: 'https://images.pexels.com/photos/33867657/pexels-photo-33867657.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'new-delhi',
         name: 'New Delhi',
         description: 'Modern capital with India Gate and government buildings',
-        image: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800'
+        image: 'https://images.pexels.com/photos/3233266/pexels-photo-3233266.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'connaught-place',
         name: 'Connaught Place',
         description: 'Commercial hub with shopping and dining',
-        image: 'https://images.unsplash.com/photo-1545126178-862cdb469409?w=800'
+        image: 'https://images.pexels.com/photos/4819654/pexels-photo-4819654.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'qutub-minar',
+        name: 'Qutub Minar',
+        description: 'UNESCO World Heritage minaret and victory tower built in 1193',
+        image: 'https://images.pexels.com/photos/28993608/pexels-photo-28993608.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'humayuns-tomb',
+        name: "Humayun's Tomb",
+        description: 'Magnificent Mughal architecture and garden tomb complex',
+        image: 'https://images.pexels.com/photos/2046487/pexels-photo-2046487.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'red-fort',
+        name: 'Red Fort',
+        description: 'Iconic Mughal fortress and symbol of India\'s independence',
+        image: 'https://images.pexels.com/photos/33597243/pexels-photo-33597243.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
@@ -216,13 +234,19 @@ export const domesticDestinations: Destination[] = [
         id: 'gateway-india',
         name: 'Gateway of India',
         description: 'Iconic monument overlooking the Arabian Sea',
-        image: 'https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800'
+        image: 'https://images.pexels.com/photos/8034398/pexels-photo-8034398.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'marine-drive',
         name: 'Marine Drive',
         description: 'Queen\'s Necklace with stunning sea views',
-        image: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800'
+        image: 'https://images.pexels.com/photos/17929155/pexels-photo-17929155.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'haji-ali-dargah',
+        name: 'Haji Ali Dargah',
+        description: 'Iconic mosque and dargah located on an islet in the Arabian Sea',
+        image: 'https://t3.ftcdn.net/jpg/01/90/18/18/360_F_190181832_uYnioyUDNzdtsTzA4Vk63oE20O3OcifM.webp'
       }
     ]
   },
@@ -233,6 +257,14 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1592639296346-560c37a0f711?w=800',
     type: 'domestic',
     highlights: ['Shaniwar Wada', 'Aga Khan Palace', 'Sinhagad Fort', 'Osho Ashram'],
+    places: [
+      {
+        id: 'sinhagad-fort',
+        name: 'Sinhagad Fort',
+        description: 'Ancient hill fortress with panoramic views and trekking trails',
+        image: 'https://images.pexels.com/photos/11314994/pexels-photo-11314994.jpeg?auto=compress&cs=tinysrgb&w=800'
+      }
+    ]
   },
   {
     id: 'hyderabad',
@@ -246,13 +278,19 @@ export const domesticDestinations: Destination[] = [
         id: 'charminar',
         name: 'Charminar',
         description: 'Iconic monument and symbol of Hyderabad',
-        image: 'https://images.unsplash.com/photo-1584466990234-04e2757d863c?w=800'
+        image: 'https://images.pexels.com/photos/19595163/pexels-photo-19595163.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'golconda',
         name: 'Golconda Fort',
         description: 'Historic fortress with acoustic marvels',
-        image: 'https://images.unsplash.com/photo-1611664786164-090201f7703f?w=800'
+        image: 'https://images.pexels.com/photos/29221924/pexels-photo-29221924.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'salar-jung-museum',
+        name: 'Salar Jung Museum',
+        description: 'One of India\'s largest museums with rich cultural artifacts',
+        image: 'https://images.pexels.com/photos/1365225/pexels-photo-1365225.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
@@ -263,6 +301,26 @@ export const domesticDestinations: Destination[] = [
     image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800',
     type: 'domestic',
     highlights: ['Marina Beach', 'Kapaleeshwarar Temple', 'Fort St. George', 'Mahabalipuram'],
+    places: [
+      {
+        id: 'marina-beach',
+        name: 'Marina Beach',
+        description: 'India\'s longest urban beach with vibrant local life',
+        image: 'https://images.pexels.com/photos/12125084/pexels-photo-12125084.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'fort-st-george',
+        name: 'Fort Saint George',
+        description: 'First British fortress in India with museum and St. Mary\'s Church',
+        image: 'https://images.pexels.com/photos/31612560/pexels-photo-31612560.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'santhome-cathedral',
+        name: 'Santhome Cathedral Basilica',
+        description: 'Neo-Gothic cathedral built over St. Thomas the Apostle\'s tomb',
+        image: 'https://images.pexels.com/photos/1207962/pexels-photo-1207962.jpeg?auto=compress&cs=tinysrgb&w=800'
+      }
+    ]
   },
   {
     id: 'bangalore',
@@ -276,13 +334,13 @@ export const domesticDestinations: Destination[] = [
         id: 'lalbagh',
         name: 'Lalbagh Gardens',
         description: 'Historic botanical garden with glass house',
-        image: 'https://images.unsplash.com/photo-1580643825938-2adfeb4a5e42?w=800'
+        image: 'https://images.pexels.com/photos/33824432/pexels-photo-33824432.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'bangalore-palace',
         name: 'Bangalore Palace',
         description: 'Tudor-style palace with royal heritage',
-        image: 'https://images.unsplash.com/photo-1603025832268-1144c06546a9?w=800'
+        image: 'https://images.pexels.com/photos/23973679/pexels-photo-23973679.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
@@ -357,50 +415,10 @@ export const domesticDestinations: Destination[] = [
     highlights: ['Rock Garden', 'Sukhna Lake', 'Rose Garden', 'Capitol Complex'],
   },
   {
-    id: 'bhopal',
-    name: 'Bhopal',
-    description: 'City of Lakes - Historic sites with natural beauty and cultural heritage',
-    image: 'https://images.pexels.com/photos/19160092/pexels-photo-19160092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    type: 'domestic',
-    highlights: ['Upper Lake', 'Taj-ul-Masajid', 'Van Vihar', 'Bhimbetka Caves'],
-  },
-  {
-    id: 'indore',
-    name: 'Indore',
-    description: 'Food Capital of India - Commercial hub with street food and palaces',
-    image: 'https://images.pexels.com/photos/10928705/pexels-photo-10928705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    type: 'domestic',
-    highlights: ['Rajwada Palace', 'Lal Bagh Palace', 'Sarafa Bazaar', 'Khajrana Temple'],
-  },
-  {
-    id: 'ahmedabad',
-    name: 'Ahmedabad',
-    description: 'Heritage City - UNESCO sites with textile industry and Gujarati culture',
-    image: 'https://images.pexels.com/photos/672642/pexels-photo-672642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    type: 'domestic',
-    highlights: ['Sabarmati Ashram', 'Kankaria Lake', 'Sidi Saiyyed Mosque', 'Adalaj Stepwell'],
-    places: [
-      {
-        id: 'sabarmati-ashram',
-        name: 'Sabarmati Ashram',
-        description: 'Gandhi\'s historic home and independence movement center',
-        image: 'https://images.unsplash.com/photo-1606121210096-fba9ec90054e?w=800'
-      }
-    ]
-  },
-  {
-    id: 'surat',
-    name: 'Surat',
-    description: 'Diamond City - Textile and diamond hub with beaches and historic sites',
-    image: 'https://images.unsplash.com/photo-1622471778399-037c9e8c77e7?w=800',
-    type: 'domestic',
-    highlights: ['Dumas Beach', 'Dutch Garden', 'Surat Castle', 'Science Centre'],
-  },
-  {
     id: 'lucknow',
     name: 'Lucknow',
     description: 'City of Nawabs - Mughal heritage with refined culture and cuisine',
-    image: 'https://images.unsplash.com/photo-1609349093802-d0fdbc100010?w=800',
+    image: 'https://images.pexels.com/photos/33798560/pexels-photo-33798560.jpeg?auto=compress&cs=tinysrgb&w=800',
     type: 'domestic',
     highlights: ['Bara Imambara', 'Chota Imambara', 'Rumi Darwaza', 'Hazratganj'],
     places: [
@@ -408,7 +426,7 @@ export const domesticDestinations: Destination[] = [
         id: 'bara-imambara',
         name: 'Bara Imambara',
         description: 'Architectural marvel with mysterious labyrinth',
-        image: 'https://images.unsplash.com/photo-1587295654753-ad7f31a44cee?w=800'
+        image: 'https://images.pexels.com/photos/18479867/pexels-photo-18479867.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
@@ -430,7 +448,35 @@ export const domesticDestinations: Destination[] = [
         id: 'agra-fort',
         name: 'Agra Fort',
         description: 'UNESCO World Heritage Mughal fortress',
-        image: 'https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?w=800'
+        image: 'https://images.pexels.com/photos/23973679/pexels-photo-23973679.jpeg?auto=compress&cs=tinysrgb&w=800'
+      }
+    ]
+  },
+  {
+    id: 'varanasi',
+    name: 'Varanasi',
+    description: 'Ancient ghats, spiritual experiences, rich culture, and timeless traditions',
+    image: 'https://images.pexels.com/photos/8112552/pexels-photo-8112552.jpeg?auto=compress&cs=tinysrgb&w=800',
+    type: 'domestic',
+    highlights: ['Kashi Vishwanath Temple', 'Dashashwamedh Ghat', 'Sarnath', 'Ganga Aarti'],
+    places: [
+      {
+        id: 'kashi-vishwanath',
+        name: 'Kashi Vishwanath Temple',
+        description: 'One of the most sacred Hindu temples dedicated to Lord Shiva',
+        image: 'https://images.pexels.com/photos/30854355/pexels-photo-30854355.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'dashashwamedh-ghat',
+        name: 'Dashashwamedh Ghat',
+        description: 'Main ghat famous for the spectacular Ganga Aarti ceremony every evening',
+        image: 'https://images.pexels.com/photos/18435639/pexels-photo-18435639.jpeg?auto=compress&cs=tinysrgb&w=800'
+      },
+      {
+        id: 'sarnath',
+        name: 'Sarnath',
+        description: 'Ancient Buddhist site where Buddha gave his first sermon, featuring the Dhamek Stupa',
+        image: 'https://images.pexels.com/photos/32814738/pexels-photo-32814738.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
@@ -466,7 +512,7 @@ export const domesticDestinations: Destination[] = [
     id: 'sikkim',
     name: 'Sikkim',
     description: 'Himalayan state with monasteries, rhododendrons, and mountain views',
-    image: 'https://images.unsplash.com/photo-1558437348-ff9c2c117010?w=800',
+    image: 'https://images.pexels.com/photos/3037435/pexels-photo-3037435.jpeg?auto=compress&cs=tinysrgb&w=800',
     type: 'domestic',
     highlights: ['Gangtok', 'Tsomgo Lake', 'Nathula Pass', 'Pelling'],
     places: [
@@ -474,19 +520,19 @@ export const domesticDestinations: Destination[] = [
         id: 'gangtok',
         name: 'Gangtok',
         description: 'Capital city with monasteries and mountain views',
-        image: 'https://images.unsplash.com/photo-1569949237615-3304befcf5d1?w=800'
+        image: 'https://images.pexels.com/photos/6592571/pexels-photo-6592571.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'tsomgo-lake',
         name: 'Tsomgo Lake',
         description: 'Glacial lake with stunning reflections and yak rides',
-        image: 'https://images.unsplash.com/photo-1626621331169-fd42e36c8f36?w=800'
+        image: 'https://images.pexels.com/photos/11752865/pexels-photo-11752865.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'pelling',
         name: 'Pelling',
         description: 'Hill station with Kanchenjunga views and skywalk',
-        image: 'https://images.unsplash.com/photo-1566205246638-fc3c82368945?w=800'
+        image: 'https://images.pexels.com/photos/13524697/pexels-photo-13524697.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },

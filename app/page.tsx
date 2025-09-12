@@ -40,8 +40,8 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
             {[
-              { icon: Globe, title: '50+ Destinations', desc: 'Worldwide Coverage' },
-              { icon: Users, title: '10,000+ Clients', desc: 'Satisfied Travelers' },
+              { icon: Globe, title: '1100+ Destinations', desc: 'Worldwide Coverage' },
+              { icon: Users, title: '2500+ Clients', desc: 'Satisfied Travelers' },
               { icon: Award, title: '25+ Years', desc: 'Industry Experience' },
               { icon: Star, title: '5 Star Service', desc: 'Premium Quality' }
             ].map((stat, index) => (
@@ -239,6 +239,101 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Tourist Activities Section */}
+      <section className="py-24 bg-gradient-to-b from-black to-gray-900">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <p className="text-gold uppercase tracking-[0.3em] mb-4 text-sm">TRENDING NOW</p>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Popular <span className="text-gold">Tourist Activities</span>
+            </h2>
+            <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Experience the most sought-after adventures and activities that travelers are loving right now
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: 'Hot Air Ballooning',
+                description: 'Soar above stunning landscapes in Cappadocia, Jaipur, or Dubai for breathtaking aerial views',
+                image: 'https://images.pexels.com/photos/2376268/pexels-photo-2376268.jpeg?auto=compress&cs=tinysrgb&w=800',
+                trending: true
+              },
+              {
+                title: 'Scuba Diving & Snorkeling',
+                description: 'Explore vibrant coral reefs and marine life in the Maldives, Andaman Islands, or Red Sea',
+                image: 'https://images.pexels.com/photos/37530/divers-scuba-divers-diving-underwater-37530.jpeg?auto=compress&cs=tinysrgb&w=800',
+                trending: true
+              },
+              {
+                title: 'Desert Safari',
+                description: 'Experience dune bashing, camel rides, and Bedouin camps in Dubai, Rajasthan, or Morocco',
+                image: 'https://images.pexels.com/photos/936250/pexels-photo-936250.jpeg?auto=compress&cs=tinysrgb&w=800',
+                trending: false
+              },
+              {
+                title: 'Northern Lights Hunting',
+                description: 'Witness the magical Aurora Borealis in Iceland, Norway, or Finland\'s Lapland',
+                image: 'https://images.pexels.com/photos/11180717/pexels-photo-11180717.jpeg?auto=compress&cs=tinysrgb&w=800',
+                trending: true
+              },
+              {
+                title: 'Wildlife Safari',
+                description: 'Spot the Big Five in Kenya, tigers in India, or unique species in the Galapagos',
+                image: 'https://images.pexels.com/photos/631292/pexels-photo-631292.jpeg?auto=compress&cs=tinysrgb&w=800',
+                trending: false
+              },
+              {
+                title: 'Luxury Cruise Experience',
+                description: 'Sail through Mediterranean coasts, Norwegian fjords, or Caribbean islands in style',
+                image: 'https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=800',
+                trending: true
+              }
+            ].map((activity, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative group overflow-hidden rounded-2xl bg-gray-900 shadow-xl"
+              >
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <img 
+                    src={activity.image} 
+                    alt={activity.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                  
+                  {activity.trending && (
+                    <div className="absolute top-4 right-4 bg-gold text-black px-3 py-1 rounded-full flex items-center gap-1">
+                      <Sparkles className="h-3 w-3" />
+                      <span className="text-xs font-semibold">TRENDING</span>
+                    </div>
+                  )}
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-white mb-3">{activity.title}</h3>
+                  <p className="text-gray-300 mb-4">{activity.description}</p>
+                  <Link href="/contact" className="inline-flex items-center text-gold hover:text-white transition-colors font-medium">
+                    Book Experience <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <LuxuryExperiences />
       

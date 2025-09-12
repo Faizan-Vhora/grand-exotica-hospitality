@@ -191,46 +191,6 @@ const destinations = [
     activities: ['Garden Tours', 'Boating', 'Shopping', 'Museums']
   },
   {
-    id: 'bhopal',
-    name: 'Bhopal',
-    tagline: 'City of Lakes',
-    description: 'Historic sites with natural beauty, museums, and cultural heritage',
-    image: 'https://images.pexels.com/photos/19160092/pexels-photo-19160092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    rating: 4.2,
-    category: 'Nature',
-    activities: ['Lake Boating', 'Wildlife Safari', 'Cave Exploration', 'Museums']
-  },
-  {
-    id: 'indore',
-    name: 'Indore',
-    tagline: 'Food Capital',
-    description: 'Commercial hub famous for street food, palaces, and temples',
-    image: 'https://images.pexels.com/photos/10928705/pexels-photo-10928705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    rating: 4.3,
-    category: 'Urban',
-    activities: ['Food Tour', 'Palace Visit', 'Temple Tours', 'Night Market']
-  },
-  {
-    id: 'ahmedabad',
-    name: 'Ahmedabad',
-    tagline: 'Heritage City',
-    description: 'UNESCO sites with textile industry, step wells, and Gujarati culture',
-    image: 'https://images.pexels.com/photos/672642/pexels-photo-672642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    rating: 4.4,
-    category: 'Heritage',
-    activities: ['Heritage Walk', 'Museum Tours', 'Food Tour', 'Shopping']
-  },
-  {
-    id: 'surat',
-    name: 'Surat',
-    tagline: 'Diamond City',
-    description: 'Textile and diamond hub with beaches, gardens, and historic sites',
-    image: 'https://images.pexels.com/photos/33793268/pexels-photo-33793268.jpeg?auto=compress&cs=tinysrgb&w=800',
-    rating: 4.1,
-    category: 'Urban',
-    activities: ['Beach Visit', 'Garden Tours', 'Shopping', 'Food Tour']
-  },
-  {
     id: 'lucknow',
     name: 'Lucknow',
     tagline: 'City of Nawabs',

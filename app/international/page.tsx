@@ -149,10 +149,10 @@ export default function InternationalPage() {
             {/* Quick Stats */}
             <div className="flex justify-center gap-8 mt-12">
               {[
-                { icon: Globe, label: 'Countries', value: '15+' },
-                { icon: Plane, label: 'Destinations', value: '50+' },
-                { icon: Building, label: 'Cities', value: '30+' },
-                { icon: Palmtree, label: 'Islands', value: '20+' }
+                { icon: Globe, label: 'Countries', value: '51+' },
+                { icon: Plane, label: 'Destinations', value: '400+' },
+                { icon: Building, label: 'Cities', value: '200+' },
+                { icon: Palmtree, label: 'Islands', value: '50+' }
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -226,44 +226,42 @@ export default function InternationalPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="group relative overflow-hidden rounded-2xl bg-gray-900 hover:transform hover:scale-105 transition-all duration-500"
+                  className="group relative overflow-hidden rounded-2xl bg-gray-900 hover:transform hover:scale-105 transition-all duration-500 cursor-default"
                 >
-                  <Link href={`/international/${destination.id}`}>
-                    <div className="aspect-[4/5] relative">
-                      <img 
-                        src={destination.image} 
-                        alt={destination.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
+                  <div className="aspect-[4/5] relative">
+                    <img 
+                      src={destination.image} 
+                      alt={destination.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80" />
+                    
+                    {/* Country Badge */}
+                    <div className="absolute top-4 left-4 bg-gold/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                      <span className="text-black font-semibold text-sm">{destination.country}</span>
+                    </div>
+                    
+                    
+                    {/* Content */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h3 className="text-3xl font-bold text-white mb-2">{destination.name}</h3>
+                      <p className="text-gray-300 mb-4 line-clamp-2">{destination.description}</p>
                       
-                      {/* Gradient Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80" />
                       
-                      {/* Country Badge */}
-                      <div className="absolute top-4 left-4 bg-gold/90 backdrop-blur-sm px-3 py-1 rounded-full">
-                        <span className="text-black font-semibold text-sm">{destination.country}</span>
-                      </div>
-                      
-                      
-                      {/* Content */}
-                      <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 className="text-3xl font-bold text-white mb-2">{destination.name}</h3>
-                        <p className="text-gray-300 mb-4 line-clamp-2">{destination.description}</p>
-                        
-                        
-                        {/* Activities - Show on Hover */}
-                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className="flex flex-wrap gap-2">
-                            {destination.activities.slice(0, 3).map((activity, idx) => (
-                              <span key={idx} className="bg-gold/20 text-gold px-2 py-1 rounded-full text-xs">
-                                {activity}
-                              </span>
-                            ))}
-                          </div>
+                      {/* Activities - Show on Hover */}
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="flex flex-wrap gap-2">
+                          {destination.activities.slice(0, 3).map((activity, idx) => (
+                            <span key={idx} className="bg-gold/20 text-gold px-2 py-1 rounded-full text-xs">
+                              {activity}
+                            </span>
+                          ))}
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </motion.div>
               ))}
             </div>

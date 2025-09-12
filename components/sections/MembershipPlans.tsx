@@ -7,7 +7,7 @@ import Link from 'next/link';
 const membershipPlans = [
   {
     name: 'SILVER ESCAPE',
-    cardColor: 'bg-gradient-to-br from-blue-700 to-blue-900',
+    cardColor: 'bg-gradient-to-br from-gray-400 via-gray-500 to-gray-600',
     price: '6,99,999',
     duration: '25 years',
     nights: '7N/8D',
@@ -19,7 +19,7 @@ const membershipPlans = [
   },
   {
     name: 'GOLD EXPLORER',
-    cardColor: 'bg-gradient-to-br from-red-700 to-red-900',
+    cardColor: 'bg-gradient-to-br from-yellow-600 via-amber-500 to-yellow-700',
     price: '9,99,999',
     duration: '25 years',
     nights: '7N/8D',
@@ -31,7 +31,7 @@ const membershipPlans = [
   },
   {
     name: 'PLATINUM VOYAGER',
-    cardColor: 'bg-gradient-to-br from-gray-800 to-black',
+    cardColor: 'bg-gradient-to-br from-gray-900 via-black to-gray-800',
     price: '12,99,999',
     duration: '25 years',
     nights: '7N/8D',
@@ -44,7 +44,7 @@ const membershipPlans = [
   },
   {
     name: 'DIAMOND ELITE',
-    cardColor: 'bg-gradient-to-br from-purple-800 via-purple-900 to-black',
+    cardColor: 'bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600',
     price: '15,99,999',
     duration: '25 years',
     nights: '7N/8D',

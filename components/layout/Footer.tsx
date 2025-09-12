@@ -4,7 +4,7 @@ import { Phone, Mail, Clock, MessageCircle, Facebook, Instagram, Linkedin } from
 import logoImg from '../../public/swiss-logo.png';
 
 export default function Footer() {
-  const whatsappNumber = '+917405108104';
+  const whatsappNumber = '+916359718274';
   const whatsappMessage = 'Hello, I am interested in your travel packages!';
   const whatsappLink = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -133,7 +133,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+91 74051 08104</span>
+                <span className="text-gray-300">+91 63597 18274</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
@@ -147,10 +147,23 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-400">
-            © {new Date().getFullYear()} Faizan Vhora. All rights reserved.
-          </p>
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 mb-4 md:mb-0">
+              © {new Date().getFullYear()} Faizan Vhora. All rights reserved. Ammar Ghanchi
+            </p>
+            <div className="flex space-x-6">
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-blue-400 transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms-conditions" className="text-gray-400 hover:text-blue-400 transition-colors">
+                Terms & Conditions
+              </Link>
+              <Link href="/payment-policy" className="text-gray-400 hover:text-blue-400 transition-colors">
+                Payment Policy
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
