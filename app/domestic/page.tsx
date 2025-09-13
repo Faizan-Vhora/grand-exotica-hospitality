@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { 
-  MapPin, Star, 
+  MapPin, 
   Filter, ChevronRight, Sparkles 
 } from 'lucide-react';
 
@@ -216,7 +216,6 @@ const categories = ['All', 'Mountains', 'Beaches', 'Heritage', 'Nature', 'Advent
 
 export default function DomesticPage() {
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [hoveredCard, setHoveredCard] = useState<string | null>(null);
 
   const filteredDestinations = destinations.filter(dest => {
     const matchesCategory = selectedCategory === 'All' || dest.category === selectedCategory;

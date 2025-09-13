@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Star, Globe, Plane, Building, Palmtree, Mountain, Camera, Heart, Sparkles } from 'lucide-react';
+import { Globe, Plane, Building, Palmtree, Mountain, Camera, Heart, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 const internationalDestinations = [

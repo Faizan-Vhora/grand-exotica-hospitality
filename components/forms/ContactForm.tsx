@@ -158,7 +158,7 @@ export default function ContactForm({ className = '', showServiceSelect = true }
           animate={{ opacity: 1, y: 0 }}
           className="bg-green-500/10 border border-green-500 text-green-500 px-4 py-3 rounded-lg"
         >
-          ✓ Thank you for your inquiry! We'll get back to you soon.
+          ✓ Thank you for your inquiry! We&apos;ll get back to you soon.
         </motion.div>
       )}
 
