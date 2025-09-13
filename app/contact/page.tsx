@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
+import ContactForm from '@/components/forms/ContactForm';
 
 export default function ContactPage() {
   return (
@@ -42,64 +43,7 @@ export default function ContactPage() {
                 Send Us a Message
               </h2>
               
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <motion.div whileHover={{ scale: 1.02 }}>
-                    <input
-                      type="text"
-                      placeholder="Your Name"
-                      className="w-full px-4 py-4 bg-gray-900 border border-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all placeholder-gray-500"
-                    />
-                  </motion.div>
-                  
-                  <motion.div whileHover={{ scale: 1.02 }}>
-                    <input
-                      type="email"
-                      placeholder="Your Email"
-                      className="w-full px-4 py-4 bg-gray-900 border border-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all placeholder-gray-500"
-                    />
-                  </motion.div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <motion.div whileHover={{ scale: 1.02 }}>
-                    <input
-                      type="tel"
-                      placeholder="Phone Number"
-                      className="w-full px-4 py-4 bg-gray-900 border border-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all placeholder-gray-500"
-                    />
-                  </motion.div>
-                  
-                  <motion.div whileHover={{ scale: 1.02 }}>
-                    <select className="w-full px-4 py-4 bg-gray-900 border border-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all">
-                      <option value="">Select Service</option>
-                      <option value="domestic">Domestic Tours</option>
-                      <option value="international">International Tours</option>
-                      <option value="packages">Holiday Packages</option>
-                      <option value="corporate">Corporate Travel</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </motion.div>
-                </div>
-
-                <motion.div whileHover={{ scale: 1.02 }}>
-                  <textarea
-                    placeholder="Your Message"
-                    rows={6}
-                    className="w-full px-4 py-4 bg-gray-900 border border-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all resize-none placeholder-gray-500"
-                  />
-                </motion.div>
-
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  type="submit"
-                  className="w-full bg-gold text-black py-4 rounded-lg font-semibold text-lg tracking-wider uppercase flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all"
-                >
-                  <Send className="h-5 w-5" />
-                  Send Message
-                </motion.button>
-              </form>
+              <ContactForm />
             </motion.div>
 
             {/* Contact Details */}
@@ -237,14 +181,19 @@ export default function ContactPage() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative h-[500px] rounded-lg overflow-hidden"
+            className="relative h-[500px] rounded-lg overflow-hidden shadow-2xl"
           >
-            <div className="absolute inset-0 bg-gray-900 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-gold mx-auto mb-4" />
-                <p className="text-gray-400">Interactive map will be integrated here</p>
-              </div>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9636614974!2d72.53594437496837!3d23.023299179169914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84dca6f6beff%3A0x700dd99aa546653b!2sGopal%20Palace%2C%20Acharya%20Narendradev%20Nagar%2C%20Ambawadi%2C%20Ahmedabad%2C%20Gujarat%20380015!5e0!3m2!1sen!2sin!4v1702901234567!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full"
+              title="Office Location Map - Gopal Palace, B-510, Fifth Floor"
+            />
           </motion.div>
         </div>
       </section>

@@ -1,216 +1,78 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, User, Mail, Phone, MapPin } from 'lucide-react';
+import ContactForm from '@/components/forms/ContactForm';
 
 export default function InquiryForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    destination: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    try {
-      // Web3Forms API - No password needed, unlimited submissions!
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          // This access key sends emails to Soyebshaikh3786@gmail.com
-          access_key: '8036d9c4-a755-406c-ab86-7a6e1703cdc3',
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          destination: formData.destination,
-          message: formData.message,
-          subject: `New Travel Inquiry from ${formData.name}`,
-          from_name: 'Swiss Hotels & Resorts Website',
-        }),
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setSubmitStatus('success');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          destination: '',
-          message: ''
-        });
-        setTimeout(() => setSubmitStatus('idle'), 5000);
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
   return (
     <section className="py-24 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto"
-        >
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <p className="text-sm uppercase tracking-[0.3em] text-gold mb-4">GET IN TOUCH</p>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
               Start Your <span className="text-gold">Journey</span>
             </h2>
-            <div className="w-24 h-[1px] bg-gold mx-auto mb-8" />
-            <p className="text-xl text-gray-300">
-              Get in touch with us to plan your dream vacation
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Tell us about your dream vacation and let our experts craft the perfect itinerary for you
             </p>
-          </div>
+          </motion.div>
 
-          <motion.form
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-gray-900 border border-gray-800 rounded-lg p-8 md:p-12"
-            onSubmit={handleSubmit}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-gray-800"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                className="relative"
-              >
-                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gold" />
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Your Name"
-                  required
-                  className="w-full pl-12 pr-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all placeholder-gray-500"
-                />
-              </motion.div>
+            <ContactForm showServiceSelect={true} />
+          </motion.div>
 
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                className="relative"
-              >
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gold" />
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Email Address"
-                  required
-                  className="w-full pl-12 pr-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all placeholder-gray-500"
-                />
-              </motion.div>
-
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                className="relative"
-              >
-                <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gold" />
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Phone Number"
-                  required
-                  className="w-full pl-12 pr-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all placeholder-gray-500"
-                />
-              </motion.div>
-
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                className="relative"
-              >
-                <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gold" />
-                <select 
-                  name="destination"
-                  value={formData.destination}
-                  onChange={handleChange}
-                  className="w-full pl-12 pr-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all appearance-none">
-                  <option value="">Select Destination</option>
-                  <option value="Domestic">Domestic</option>
-                  <option value="International">International</option>
-                </select>
-              </motion.div>
+          {/* Contact Information */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+          >
+            <div>
+              <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="h-8 w-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <h3 className="text-white font-semibold mb-2">Call Us</h3>
+              <p className="text-gray-400">+91 63597 18274</p>
             </div>
 
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="mt-6"
-            >
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Tell us about your dream vacation..."
-                rows={4}
-                className="w-full px-4 py-4 bg-black border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all resize-none placeholder-gray-500"
-              />
-            </motion.div>
-
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              type="submit"
-              disabled={isSubmitting}
-              className="mt-8 w-full bg-gold text-black py-4 rounded-lg font-semibold text-lg tracking-wider uppercase flex items-center justify-center space-x-2 hover:bg-opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              <Send className="h-5 w-5" />
-              <span>{isSubmitting ? 'Sending...' : 'Send Inquiry'}</span>
-            </motion.button>
-            
-            {submitStatus === 'success' && (
-              <p className="mt-4 text-green-500 text-center">Inquiry sent successfully! We&apos;ll contact you soon.</p>
-            )}
-            {submitStatus === 'error' && (
-              <p className="mt-4 text-red-500 text-center">Failed to send inquiry. Please try again.</p>
-            )}
-          </motion.form>
-
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <h4 className="text-gold font-semibold mb-2">Call Us</h4>
-              <p className="text-gray-400">+91 74051 08104</p>
-            </div>
-            <div>
-              <h4 className="text-gold font-semibold mb-2">Email Us</h4>
+              <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="h-8 w-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-white font-semibold mb-2">Email Us</h3>
               <p className="text-gray-400">info@swisshospitality.co.in</p>
             </div>
+
             <div>
-              <h4 className="text-gold font-semibold mb-2">Visit Us</h4>
-              <p className="text-gray-400">Ahmedabad, India</p>
+              <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="h-8 w-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-white font-semibold mb-2">Office Hours</h3>
+              <p className="text-gray-400">Mon-Sat: 9AM-7PM</p>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

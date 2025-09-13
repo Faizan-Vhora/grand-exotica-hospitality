@@ -8,50 +8,37 @@ const travelPartners = [
   {
     name: 'Expedia',
     url: 'https://www.expedia.com',
-    color: '#003B95',
-    bgColor: '#E8F2FF'
+    logo: '/partners/t-expedia.jpg'
   },
   {
-    name: 'EaseMyTrip',
-    url: 'https://www.easemytrip.com',
-    color: '#0066CC',
-    bgColor: '#E6F3FF'
-  },
-  {
-    name: 'Cleartrip',
+    name: 'ClearTrip',
     url: 'https://www.cleartrip.com',
-    color: '#FF6B35',
-    bgColor: '#FFF5F0'
+    logo: '/partners/t-clear-trip.jpg'
   },
   {
     name: 'Booking.com',
     url: 'https://www.booking.com',
-    color: '#003580',
-    bgColor: '#EAF0F9'
-  },
-  {
-    name: 'Trivago',
-    url: 'https://www.trivago.com',
-    color: '#007FAD',
-    bgColor: '#E5F5FA'
+    logo: '/partners/t-booking.com_.jpg'
   },
   {
     name: 'MakeMyTrip',
     url: 'https://www.makemytrip.com',
-    color: '#EF5350',
-    bgColor: '#FFEBEE'
+    logo: '/partners/t-make-my-trip.jpg'
   },
   {
-    name: 'Agoda',
-    url: 'https://www.agoda.com',
-    color: '#5A5FD8',
-    bgColor: '#F0F1FF'
+    name: 'Trivago',
+    url: 'https://www.trivago.com',
+    logo: '/partners/t-trivago.jpg'
   },
   {
-    name: 'Hotels.com',
-    url: 'https://www.hotels.com',
-    color: '#D32F2F',
-    bgColor: '#FFEBEE'
+    name: 'Travel Guru',
+    url: 'https://www.travelguru.com',
+    logo: '/partners/t-travel-guru.jpg'
+  },
+  {
+    name: 'goIbibo',
+    url: 'https://www.goibibo.com',
+    logo: '/partners/t-goibibo.jpg'
   }
 ];
 
@@ -59,50 +46,22 @@ const airlinePartners = [
   {
     name: 'Vistara',
     url: 'https://www.airvistara.com',
-    color: '#4B2C5E',
-    bgColor: '#F5F0F7'
+    logo: '/partners/a-vistara.jpg'
   },
   {
     name: 'Air India',
     url: 'https://www.airindia.com',
-    color: '#ED1B24',
-    bgColor: '#FFF0F1'
+    logo: '/partners/a-air-india.jpg'
   },
   {
     name: 'SpiceJet',
     url: 'https://www.spicejet.com',
-    color: '#FFA500',
-    bgColor: '#FFF8E8'
+    logo: '/partners/a-spicejet.jpg'
   },
   {
     name: 'IndiGo',
     url: 'https://www.goindigo.in',
-    color: '#0F1E6C',
-    bgColor: '#E8EAF6'
-  },
-  {
-    name: 'Emirates',
-    url: 'https://www.emirates.com',
-    color: '#D71921',
-    bgColor: '#FFEBEC'
-  },
-  {
-    name: 'Qatar Airways',
-    url: 'https://www.qatarairways.com',
-    color: '#5C0632',
-    bgColor: '#F8E8F0'
-  },
-  {
-    name: 'Singapore Airlines',
-    url: 'https://www.singaporeair.com',
-    color: '#002157',
-    bgColor: '#E8EDF5'
-  },
-  {
-    name: 'Lufthansa',
-    url: 'https://www.lufthansa.com',
-    color: '#05164D',
-    bgColor: '#E6E9F2'
+    logo: '/partners/a-indigo.jpg'
   }
 ];
 
@@ -120,8 +79,8 @@ export default function PartnersSection() {
     let airlinePosition = 0;
     
     const scrollInterval = setInterval(() => {
-      travelPosition += 0.5; // Slower speed
-      airlinePosition += 0.5; // Slower speed
+      travelPosition += 0.3; // Even slower for smoother scrolling
+      airlinePosition += 0.3; // Even slower for smoother scrolling
       
       if (travelScroll) {
         if (travelPosition >= travelScroll.scrollWidth / 2) {
@@ -170,7 +129,7 @@ export default function PartnersSection() {
           <div className="overflow-hidden">
             <div 
               ref={travelScrollRef}
-              className="flex gap-6 transition-transform ease-linear"
+              className="flex gap-8 transition-transform ease-linear"
               style={{ width: 'max-content' }}
             >
               {[...travelPartners, ...travelPartners].map((partner, index) => (
@@ -180,18 +139,17 @@ export default function PartnersSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-shrink-0 group"
-                  whileHover={{ scale: 1.03, y: -5 }}
+                  whileHover={{ scale: 1.05, y: -8 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <div 
-                    className="rounded-2xl transition-all duration-500 p-10 w-64 h-40 flex items-center justify-center border border-gray-800 group-hover:border-gold/50 bg-gray-900/50 backdrop-blur-sm group-hover:bg-gray-900/70"
+                    className="rounded-2xl transition-all duration-700 ease-in-out p-6 w-80 h-48 flex items-center justify-center border border-gray-800 group-hover:border-gold/50 bg-white group-hover:bg-gray-50 shadow-lg group-hover:shadow-xl"
                   >
-                    <span 
-                      className="text-3xl font-extrabold transition-all duration-300 group-hover:scale-110"
-                      style={{ color: partner.color }}
-                    >
-                      {partner.name}
-                    </span>
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="max-h-32 max-w-[240px] w-auto h-auto object-contain transition-all duration-500 ease-in-out group-hover:scale-110 filter group-hover:brightness-110"
+                    />
                   </div>
                 </motion.a>
               ))}
@@ -226,7 +184,7 @@ export default function PartnersSection() {
           <div className="overflow-hidden">
             <div 
               ref={airlineScrollRef}
-              className="flex gap-6 transition-transform ease-linear"
+              className="flex gap-8 transition-transform ease-linear"
               style={{ width: 'max-content' }}
             >
               {[...airlinePartners, ...airlinePartners].map((partner, index) => (
@@ -236,18 +194,17 @@ export default function PartnersSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-shrink-0 group"
-                  whileHover={{ scale: 1.03, y: -5 }}
+                  whileHover={{ scale: 1.05, y: -8 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <div 
-                    className="rounded-2xl transition-all duration-500 p-10 w-64 h-40 flex items-center justify-center border border-gray-800 group-hover:border-gold/50 bg-gray-900/50 backdrop-blur-sm group-hover:bg-gray-900/70"
+                    className="rounded-2xl transition-all duration-700 ease-in-out p-6 w-80 h-48 flex items-center justify-center border border-gray-800 group-hover:border-gold/50 bg-white group-hover:bg-gray-50 shadow-lg group-hover:shadow-xl"
                   >
-                    <span 
-                      className="text-3xl font-extrabold transition-all duration-300 group-hover:scale-110"
-                      style={{ color: partner.color }}
-                    >
-                      {partner.name}
-                    </span>
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="max-h-32 max-w-[240px] w-auto h-auto object-contain transition-all duration-500 ease-in-out group-hover:scale-110 filter group-hover:brightness-110"
+                    />
                   </div>
                 </motion.a>
               ))}

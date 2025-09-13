@@ -165,13 +165,13 @@ export default function MembershipPage() {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Start your journey with Swiss Hospitality today and unlock a world of luxury travel
             </p>
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-gold text-black font-semibold text-lg tracking-wider uppercase hover:bg-opacity-90 transition-all"
             >
               Become a Member
-            </motion.button>
+            </motion.button> */}
           </motion.div>
         </div>
       </section>
