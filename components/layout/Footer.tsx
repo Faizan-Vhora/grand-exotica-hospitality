@@ -2,16 +2,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, Clock, MessageCircle, Facebook, Instagram, Linkedin } from 'lucide-react';
 import logoImg from '../../public/swiss-logo.png';
+import gujaratCertificate from '../../Gujarat Tourism Nidhi certificate.jpg';
 
 export default function Footer() {
-  const whatsappNumber = '+916359718274';
+  const whatsappNumber = '+919998231516';
   const whatsappMessage = 'Hello, I am interested in your travel packages!';
   const whatsappLink = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
           <div>
             <div className="mb-4">
               <Image
@@ -122,26 +123,37 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/international/europe" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Switzerland
+                  Europe
                 </Link>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+91 63597 18274</span>
+          <div className="lg:flex lg:items-start lg:justify-between lg:col-span-1">
+            <div className="flex-1">
+              <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-blue-400" />
+                  <span className="text-gray-300">+91 9998231516</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-blue-400" />
+                  <span className="text-gray-300">info@swisshospitality.co.in</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Clock className="h-5 w-5 text-blue-400" />
+                  <span className="text-gray-300">Mon-Sat: 10AM-6PM</span>
+                </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">info@swisshospitality.co.in</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">Mon-Sat: 9AM-7PM</span>
+              <div className="mt-4">
+                <Image
+                  src={gujaratCertificate}
+                  alt="Gujarat Tourism Nidhi Certificate"
+                  width={160}
+                  height={120}
+                  className="rounded-lg shadow-xl border border-gray-600"
+                />
               </div>
             </div>
           </div>
@@ -150,17 +162,17 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">
-              © {new Date().getFullYear()} Faizan Vhora. All rights reserved. Ammar Ghanchi
+              © {new Date().getFullYear()} <a href="https://mail.google.com/mail/?view=cm&fs=1&to=faizanvhora0505@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Faizan Vhora</a>. All rights reserved. Ammar Ghanchi
             </p>
             <div className="flex space-x-6">
-              <Link href="/privacy-policy" className="text-gray-400 hover:text-blue-400 transition-colors">
-                Privacy Policy
-              </Link>
               <Link href="/terms-conditions" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Terms & Conditions
               </Link>
-              <Link href="/payment-policy" className="text-gray-400 hover:text-blue-400 transition-colors">
-                Payment Policy
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-blue-400 transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/refund-policy" className="text-gray-400 hover:text-blue-400 transition-colors">
+                Refund Policy
               </Link>
             </div>
           </div>

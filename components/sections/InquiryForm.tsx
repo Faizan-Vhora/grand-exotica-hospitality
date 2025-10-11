@@ -49,7 +49,7 @@ export default function InquiryForm() {
                 </svg>
               </div>
               <h3 className="text-white font-semibold mb-2">Call Us</h3>
-              <p className="text-gray-400">+91 63597 18274</p>
+              <p className="text-gray-400">+91 9998231516</p>
             </div>
 
             <div>

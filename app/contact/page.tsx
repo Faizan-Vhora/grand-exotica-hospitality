@@ -65,8 +65,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-1">Phone</h3>
-                    <p className="text-gray-400">+91 98765 43210</p>
-                    <p className="text-gray-400">+91 98765 43211</p>
+                    <p className="text-gray-400">+91 9998231516</p>
                   </div>
                 </div>
 
@@ -76,8 +75,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-1">Email</h3>
-                    <p className="text-gray-400">info@swisshospitality.com</p>
-                    <p className="text-gray-400">support@swisshospitality.com</p>
+                    <p className="text-gray-400">info@swisshospitality.co.in</p>
                   </div>
                 </div>
 
@@ -92,8 +90,7 @@ export default function ContactPage() {
                       Fifth Floor, Next to Shiromani Complex<br />
                       Beside Nehru Nagar Circle, Satellite Road<br />
                       Acharya Narendradev Nagar, Ambawadi<br />
-                      Ahmedabad, Gujarat 380015<br />
-                      Area: 1150 Sq. Ft. (106.84 Sq. Mtrs)
+                      Ahmedabad, Gujarat 380015
                     </p>
                   </div>
                 </div>

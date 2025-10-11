@@ -356,13 +356,13 @@ export const domesticDestinations: Destination[] = [
         id: 'victoria-memorial',
         name: 'Victoria Memorial',
         description: 'White marble monument with museum',
-        image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800'
+        image: 'https://images.pexels.com/photos/33860013/pexels-photo-33860013.jpeg?auto=compress&cs=tinysrgb&w=800'
       },
       {
         id: 'howrah-bridge',
         name: 'Howrah Bridge',
         description: 'Iconic cantilever bridge over Hooghly river',
-        image: 'https://images.unsplash.com/photo-1496372412473-e8548ffd82bc?w=800'
+        image: 'https://images.pexels.com/photos/30137965/pexels-photo-30137965.jpeg?auto=compress&cs=tinysrgb&w=800'
       }
     ]
   },
