@@ -61,25 +61,6 @@ export default function PaymentPage() {
             <PaymentForm />
           </div>
 
-          {/* Additional Info */}
-          <div className="mt-8 text-center">
-            <p className="text-gray-400 text-sm mb-4">
-              By proceeding with the payment, you agree to our{' '}
-              <a href="/terms-conditions" className="text-gold hover:underline">
-                Terms & Conditions
-              </a>
-              {' '}and{' '}
-              <a href="/refund-policy" className="text-gold hover:underline">
-                Refund Policy
-              </a>
-            </p>
-
-            <div className="flex items-center justify-center gap-4 text-gray-500 text-xs">
-              <span>Powered by</span>
-              <span className="font-semibold text-blue-400">Razorpay</span>
-            </div>
-          </div>
-
           {/* Payment Methods */}
           <div className="mt-12 bg-gray-800/20 border border-gray-700 rounded-xl p-6">
             <h3 className="text-white font-semibold mb-4 text-center">Accepted Payment Methods</h3>

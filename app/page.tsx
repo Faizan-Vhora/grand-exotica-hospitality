@@ -7,6 +7,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import LuxuryExperiences from '@/components/sections/LuxuryExperiences';
 import InquiryForm from '@/components/sections/InquiryForm';
 import PartnersSection from '@/components/sections/PartnersSection';
+import NidhiCertificate from '@/components/sections/NidhiCertificate';
 import { domesticDestinations, internationalDestinations } from '@/data/destinations';
 
 export default function HomePage() {
@@ -483,7 +484,10 @@ export default function HomePage() {
 
         </div>
       </section>
-      
+
+      {/* NIDHI Certificate Section */}
+      <NidhiCertificate />
+
       {/* Why Choose Us - Moved to end of page */}
       <section className="py-24 bg-gradient-to-b from-black to-gray-900">
         <div className="container mx-auto px-4">

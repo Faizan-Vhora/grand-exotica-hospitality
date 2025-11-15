@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
   images: {
     remotePatterns: [
       {
@@ -21,7 +20,6 @@ const nextConfig: NextConfig = {
         hostname: 'i0.wp.com',
       },
     ],
-    unoptimized: true,
   },
   trailingSlash: true,
 };

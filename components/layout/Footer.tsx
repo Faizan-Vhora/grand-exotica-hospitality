@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, Clock, MessageCircle, Facebook, Instagram, Linkedin, CreditCard } from 'lucide-react';
 import logoImg from '../../public/swiss-logo.png';
-import gujaratCertificate from '../../Gujarat Tourism Nidhi certificate.jpg';
 
 export default function Footer() {
   const whatsappNumber = '+919998231516';
@@ -145,15 +144,6 @@ export default function Footer() {
                   <Clock className="h-5 w-5 text-blue-400" />
                   <span className="text-gray-300">Mon-Sat: 10AM-6PM</span>
                 </div>
-              </div>
-              <div className="mt-4">
-                <Image
-                  src={gujaratCertificate}
-                  alt="Gujarat Tourism Nidhi Certificate"
-                  width={160}
-                  height={120}
-                  className="rounded-lg shadow-xl border border-gray-600"
-                />
               </div>
             </div>
           </div>
