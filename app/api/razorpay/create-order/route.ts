@@ -3,6 +3,18 @@ import Razorpay from 'razorpay';
 
 export async function POST(req: NextRequest) {
   try {
+    // Check if environment variables are set
+    if (!process.env.RAZORPAY_KEY_ID || !process.env.RAZORPAY_KEY_SECRET) {
+      console.error('Missing Razorpay credentials');
+      return NextResponse.json(
+        {
+          error: 'Payment gateway not configured',
+          details: 'Missing RAZORPAY_KEY_ID or RAZORPAY_KEY_SECRET environment variables'
+        },
+        { status: 500 }
+      );
+    }
+
     const { amount, currency = 'INR', notes = {} } = await req.json();
 
     if (!amount || amount <= 0) {
@@ -14,8 +26,8 @@ export async function POST(req: NextRequest) {
 
     // Initialize Razorpay instance
     const razorpay = new Razorpay({
-      key_id: process.env.RAZORPAY_KEY_ID!,
-      key_secret: process.env.RAZORPAY_KEY_SECRET!,
+      key_id: process.env.RAZORPAY_KEY_ID,
+      key_secret: process.env.RAZORPAY_KEY_SECRET,
     });
 
     // Create order
