@@ -169,7 +169,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-2 bg-gold text-black px-4 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all"
               >
                 <CreditCard className="h-4 w-4" />
-                Make Payment
+                Pay Now
               </Link>
             </div>
           </div>

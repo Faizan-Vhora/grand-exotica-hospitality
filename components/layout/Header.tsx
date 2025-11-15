@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Menu, X, ChevronDown, Facebook, Instagram, Linkedin, CreditCard } from 'lucide-react';
 
 const navItems = [
   { name: 'HOME', href: '/' },
@@ -118,7 +118,7 @@ export default function Header() {
               ))}
             </div>
 
-            {/* Member Login Section with Social Icons */}
+            {/* Action Buttons Section with Social Icons */}
             <div className="flex flex-col items-center gap-2">
               {/* Social Media Icons */}
               <div className="flex items-center gap-2">
@@ -161,17 +161,32 @@ export default function Header() {
                   <Linkedin className="h-3.5 w-3.5" />
                 </motion.a>
               </div>
-              
-              {/* Member Login Button */}
-              <Link href="/login">
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="bg-gold text-black px-6 py-2 rounded-full font-semibold text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all duration-300"
-                >
-                  MEMBER LOGIN
-                </motion.button>
-              </Link>
+
+              {/* Action Buttons */}
+              <div className="flex items-center gap-3">
+                {/* Make Payment Button */}
+                <Link href="/payment">
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="bg-gold text-black px-5 py-2 rounded-full font-semibold text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all duration-300 flex items-center gap-2 cursor-pointer"
+                  >
+                    <CreditCard className="h-3.5 w-3.5" />
+                    PAY NOW
+                  </motion.button>
+                </Link>
+
+                {/* Member Login Button */}
+                <Link href="/login">
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="bg-gold text-black px-6 py-2 rounded-full font-semibold text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all duration-300 cursor-pointer"
+                  >
+                    MEMBER LOGIN
+                  </motion.button>
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -227,9 +242,16 @@ export default function Header() {
                   </div>
                 ))}
                 
-                {/* Mobile Member Login Button */}
+                {/* Mobile Action Buttons */}
+                <Link href="/payment" onClick={() => setIsOpen(false)}>
+                  <button className="w-full bg-gold text-black px-6 py-3 rounded-full font-semibold text-sm tracking-wider uppercase hover:bg-opacity-90 transition-all duration-300 mt-4 flex items-center justify-center gap-2 cursor-pointer">
+                    <CreditCard className="h-4 w-4" />
+                    PAY NOW
+                  </button>
+                </Link>
+
                 <Link href="/login" onClick={() => setIsOpen(false)}>
-                  <button className="w-full bg-gold text-black px-6 py-3 rounded-full font-semibold text-sm tracking-wider uppercase hover:bg-opacity-90 transition-all duration-300 mt-4">
+                  <button className="w-full bg-gold text-black px-6 py-3 rounded-full font-semibold text-sm tracking-wider uppercase hover:bg-opacity-90 transition-all duration-300 cursor-pointer">
                     MEMBER LOGIN
                   </button>
                 </Link>
