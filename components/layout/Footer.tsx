@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, Clock, MessageCircle, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, Clock, MessageCircle, Facebook, Instagram, Linkedin, CreditCard } from 'lucide-react';
 import logoImg from '../../public/swiss-logo.png';
 import gujaratCertificate from '../../Gujarat Tourism Nidhi certificate.jpg';
 
@@ -164,7 +164,7 @@ export default function Footer() {
             <p className="text-gray-400 mb-4 md:mb-0">
               © {new Date().getFullYear()} <a href="https://mail.google.com/mail/?view=cm&fs=1&to=faizanvhora0505@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Faizan Vhora</a>. All rights reserved. Ammar Ghanchi
             </p>
-            <div className="flex space-x-6">
+            <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
               <Link href="/terms-conditions" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Terms & Conditions
               </Link>
@@ -173,6 +173,13 @@ export default function Footer() {
               </Link>
               <Link href="/refund-policy" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Refund Policy
+              </Link>
+              <Link
+                href="/payment"
+                className="inline-flex items-center gap-2 bg-gold text-black px-4 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all"
+              >
+                <CreditCard className="h-4 w-4" />
+                Make Payment
               </Link>
             </div>
           </div>

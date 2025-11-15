@@ -118,7 +118,6 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-wider"
-            style={{ fontFamily: "'Playfair Display', serif" }}
           >
             SWISS HOSPITALITY
           </motion.h1>
