@@ -69,7 +69,7 @@ export default function InquiryForm() {
                 </svg>
               </div>
               <h3 className="text-white font-semibold mb-2">Office Hours</h3>
-              <p className="text-gray-400">Mon-Sat: 9AM-7PM</p>
+              <p className="text-gray-400">Mon-Sat: 10AM-6PM</p>
             </div>
           </motion.div>
         </div>

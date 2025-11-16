@@ -152,7 +152,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">
-              © {new Date().getFullYear()} <a href="https://mail.google.com/mail/?view=cm&fs=1&to=faizanvhora0505@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Faizan Vhora</a>. All rights reserved. Ammar Ghanchi
+              © {new Date().getFullYear()} Swiss Hospitality. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
               <Link href="/terms-conditions" className="text-gray-400 hover:text-blue-400 transition-colors">
