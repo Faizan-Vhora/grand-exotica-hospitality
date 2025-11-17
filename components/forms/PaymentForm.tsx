@@ -98,7 +98,7 @@ export default function PaymentForm({ className = '' }: PaymentFormProps) {
       }
 
       // Create order on backend
-      const orderResponse = await fetch('/api/razorpay/create-order', {
+      const orderResponse = await fetch('/razorpay-create-order.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -139,7 +139,7 @@ export default function PaymentForm({ className = '' }: PaymentFormProps) {
         handler: async function (response: RazorpayResponse) {
           // Verify payment on backend
           try {
-            const verifyResponse = await fetch('/api/razorpay/verify-payment', {
+            const verifyResponse = await fetch('/razorpay-verify-payment.php', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
